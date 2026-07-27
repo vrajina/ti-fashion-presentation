@@ -1,0 +1,41 @@
+---
+export interface Props {
+  className?: string;
+  size?: number;
+}
+
+const { className = "", size = 36 } = Astro.props;
+---
+
+<div class={`flex items-center gap-3 ${className}`} style="display: flex; align-items: center; gap: 12px;">
+  <svg width={size} height={size} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Outer Octagonal Luxury Frame -->
+    <rect x="2" y="2" width="96" height="96" rx="16" stroke="url(#goldGradient)" stroke-width="3" fill="rgba(15, 15, 20, 0.9)" />
+    
+    <!-- Monogram TI -->
+    <path d="M 22 28 H 78 V 36 H 54 V 76 H 44 V 36 H 22 V 28 Z" fill="url(#goldGradient)" />
+    <path d="M 60 42 H 78 V 76 H 68 V 50 H 60 V 42 Z" fill="#FFFFFF" opacity="0.9" />
+
+    <!-- Corner Accents -->
+    <circle cx="10" cy="10" r="2" fill="#D4AF37" />
+    <circle cx="90" cy="10" r="2" fill="#D4AF37" />
+    <circle cx="10" cy="90" r="2" fill="#D4AF37" />
+    <circle cx="90" cy="90" r="2" fill="#D4AF37" />
+
+    <defs>
+      <linearGradient id="goldGradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FFF7D6" />
+        <stop offset="0.5" stop-color="#D4AF37" />
+        <stop offset="1" stop-color="#AA820A" />
+      </linearGradient>
+    </defs>
+  </svg>
+  <div style="display: flex; flex-direction: column; text-align: left;">
+    <span style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; letter-spacing: 0.18em; color: #FFFFFF; line-height: 1;">
+      TREND ISLAND
+    </span>
+    <span style="font-size: 0.62rem; font-weight: 600; letter-spacing: 0.22em; color: var(--accent-gold); text-transform: uppercase; margin-top: 4px;">
+      Click & Collect E-Commerce
+    </span>
+  </div>
+</div>
