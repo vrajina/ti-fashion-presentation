@@ -13,10 +13,24 @@ import '../styles/v4-light.css';
   <title>Trend Island — Click & Collect E-Commerce Стратегия v4</title>
   <meta name="description" content="План цифровой трансформации и запуска каналов онлайн-продаж Click & Collect для Trend Island" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .phase-detail-list {
+      margin-left: 1.15rem;
+      font-size: 0.85rem;
+      color: var(--text-body);
+      line-height: 1.55;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .phase-detail-list li {
+      padding-left: 0.2rem;
+    }
+  </style>
 </head>
 <body>
   <div class="deck-container">
-    <HeaderV4 totalSlides={10} currentVersion="v4" />
+    <HeaderV4 totalSlides={10} />
 
     <!-- SLIDE 1: Title with Full Background Image -->
     <section class="slide active slide-title-bg" data-slide="0">
@@ -294,7 +308,7 @@ import '../styles/v4-light.css';
       </div>
     </section>
 
-    <!-- SLIDE 7: Detailed Scope & Budget -->
+    <!-- SLIDE 7: Detailed Scope & Budget with HTML Bulleted Lists -->
     <section class="slide" data-slide="6">
       <div class="slide-content">
         <div class="fashion-pill">Слайд 07 / Смета и&nbsp;Наполнение</div>
@@ -305,39 +319,42 @@ import '../styles/v4-light.css';
           <div class="fashion-card-light">
             <div style="font-size: 0.78rem; font-weight: 500; color: var(--text-muted); font-family: var(--font-mono);">ФАЗА 1: ТЕСТОВЫЙ ПИЛОТ (5–6 МЕС)</div>
             <div class="card-title">5&nbsp;460&nbsp;000 ₽ <span style="font-size: 0.75rem; font-weight: 400; color: var(--text-muted);">(под ключ)</span></div>
-            <div style="font-size: 0.84rem; color: var(--text-body); line-height: 1.55;">
-              • <strong>Премиальный Fashion-сайт на Nuxt 3 (Vue 3):</strong> листинги, быстрый поиск PostgreSQL FTS, фильтры, карточки товаров (PDP), ЛК покупателя, корзина, мобильный чекаут, персональная страница бренда.<br/>
-              • <strong>Пилот на 3–4 ключевых брендах:</strong> обкатка сборки.<br/>
-              • <strong>ЛК брендов + Telegram-бот:</strong> каталог, остатки, цены.<br/>
-              • <strong>Уведомления покупателей:</strong> SMS/Email статусы.<br/>
-              • <strong>АРМ стойки в Авиапарке:</strong> 54-ФЗ, Честный ЗНАК.<br/>
-              • <strong>Сценарии оплаты:</strong> холдирование / бронь.<br/>
-              • <strong>OTP-авторизация:</strong> SMS, Flash-Call, Yandex ID.
-            </div>
+            
+            <ul class="phase-detail-list">
+              <li><strong>Премиальный Fashion-сайт на Nuxt 3 (Vue 3):</strong> листинги, быстрый поиск PostgreSQL FTS, фильтры, карточки товаров (PDP), ЛК покупателя, корзина, мобильный чекаут, персональная страница бренда.</li>
+              <li><strong>Пилот на 3–4 ключевых брендах:</strong> обкатка сборки и передачи товаров на стойку.</li>
+              <li><strong>ЛК брендов + Telegram-бот:</strong> управление остатками, ценами и алертами.</li>
+              <li><strong>Система уведомлений покупателей:</strong> SMS/Email статусы готовности заказа.</li>
+              <li><strong>АРМ стойки выдачи в «Авиапарке»:</strong> ОФД 54-ФЗ, Честный ЗНАК.</li>
+              <li><strong>Сценарии оплаты:</strong> холдирование средств или оплата при получении.</li>
+              <li><strong>OTP-авторизация:</strong> SMS, Flash-Call, Yandex ID.</li>
+            </ul>
           </div>
 
           <div class="fashion-card-light">
             <div style="font-size: 0.78rem; font-weight: 500; color: var(--text-muted); font-family: var(--font-mono);">ФАЗА 2: МАСШТАБИРОВАНИЕ (3.5–4.5 МЕС)</div>
             <div class="card-title">1&nbsp;440&nbsp;000 – 3&nbsp;540&nbsp;000 ₽</div>
-            <div style="font-size: 0.84rem; color: var(--text-body); line-height: 1.55;">
-              • <strong>Интеграция с учетной системой 1С:</strong> выгрузка чеков и комиссии.<br/>
-              • <strong>Программа Лояльности на чекауте:</strong> бонусы в корзине.<br/>
-              • <strong>Товарные рекомендации:</strong> Retail Rocket / Mindbox.<br/>
-              • <strong>Отзывы и UGC:</strong> фото и оценки покупателей.<br/>
-              • <strong>Shoppable Лукбуки:</strong> подборки от стилистов с тегами.<br/>
-              • <strong>SEO-автогенератор:</strong> индексируемые страницы категорий.<br/>
-              • <strong>Каскадный SLA &amp; Авто-рейтинг брендов.</strong>
-            </div>
+            
+            <ul class="phase-detail-list">
+              <li><strong>Интеграция с учетной системой 1С:</strong> асинхронная выгрузка выкупленных чеков и комиссии.</li>
+              <li><strong>Программа Лояльности на чекауте:</strong> списание и начисление бонусов в корзине.</li>
+              <li><strong>Товарные рекомендации:</strong> алгоритмы Retail Rocket / Mindbox.</li>
+              <li><strong>Отзывы и UGC:</strong> фото и оценки от покупателей.</li>
+              <li><strong>Shoppable Лукбуки:</strong> подборки от стилистов с кликабельными тегами.</li>
+              <li><strong>SEO-автогенератор:</strong> индексируемые страницы категорий.</li>
+              <li><strong>Каскадный SLA &amp; Авто-рейтинг брендов.</strong></li>
+            </ul>
           </div>
 
           <div class="fashion-card-light">
             <div style="font-size: 0.78rem; font-weight: 500; color: var(--text-muted); font-family: var(--font-mono);">ФАЗА 3: ЭКОСИСТЕМА (4–5 МЕС)</div>
             <div class="card-title">2&nbsp;430&nbsp;000 – 3&nbsp;600&nbsp;000 ₽</div>
-            <div style="font-size: 0.84rem; color: var(--text-body); line-height: 1.55;">
-              • <strong>Мобильное Приложение Flutter (iOS/Android):</strong> 60–120 fps UX, пуш-уведомления, гео-пуши при входе в ТЦ «Авиапарк», QR-карта вызова заказа.<br/>
-              • <strong>Умный поиск (Elasticsearch / OpenSearch):</strong> семантический ИИ-поиск по масштабному каталогу.<br/>
-              • <strong>Экспресс-доставка Курьерами (Ship-from-Store):</strong> доставка курьерами (Яндекс Доставка / СДЭК) за 2–4 часа по Москве.
-            </div>
+            
+            <ul class="phase-detail-list">
+              <li><strong>Мобильное Приложение Flutter (iOS/Android):</strong> 60–120 fps UX, пуш-уведомления, гео-пуши при входе в ТЦ «Авиапарк», QR-карта вызова заказа.</li>
+              <li><strong>Умный поиск (Elasticsearch / OpenSearch):</strong> семантический ИИ-поиск по масштабному каталогу.</li>
+              <li><strong>Экспресс-доставка Курьерами (Ship-from-Store):</strong> доставка курьерами (Яндекс Доставка / СДЭК) за 2–4 часа по Москве.</li>
+            </ul>
           </div>
         </div>
 
@@ -384,7 +401,7 @@ import '../styles/v4-light.css';
     <section class="slide" data-slide="8">
       <div class="slide-content">
         <div class="fashion-pill">Слайд 09 / Финансовая Модель</div>
-        <h1 class="title-editorial">Юнит-экономика и&nbsp;финансовый потенциал (Консервативный расчет)</h1>
+        <h1 class="title-editorial">Юнит-экономика и&nbsp;финансовый потенциал</h1>
         <p class="subtitle-light">
           Исходный трафик сайта (SimilarWeb): 45&nbsp;000 – 50&nbsp;000 визитов/мес | Текущая онлайн-выручка: 0&nbsp;₽ | Бенчмарки Fashion <span class="nobr">Click &amp; Collect</span>: AOV ~8&nbsp;500&nbsp;₽, Выкуп на&nbsp;стойке ~75–80%
         </p>
@@ -480,7 +497,7 @@ import '../styles/v4-light.css';
     <FooterV4 totalSlides={10} />
   </div>
 
-  <!-- Client Script for v4 Deck Controls -->
+  <!-- Client Script for v4 Deck Controls & Smart Wheel Navigation -->
   <script>
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
@@ -526,6 +543,7 @@ import '../styles/v4-light.css';
       });
     });
 
+    // Keyboard Navigation
     window.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
         e.preventDefault();
@@ -536,6 +554,44 @@ import '../styles/v4-light.css';
       }
     });
 
+    // Mouse Wheel Navigation (Smart Internal Scroll Check)
+    let isWheelThrottled = false;
+
+    window.addEventListener('wheel', (e) => {
+      const activeSlide = slides[currentSlide] as HTMLElement;
+      if (!activeSlide) return;
+
+      const isAtBottom = activeSlide.scrollTop + activeSlide.clientHeight >= activeSlide.scrollHeight - 8;
+      const isAtTop = activeSlide.scrollTop <= 8;
+
+      if (e.deltaY > 0) {
+        // Scroll Down
+        if (isAtBottom) {
+          if (currentSlide < totalSlides - 1) {
+            e.preventDefault();
+            if (!isWheelThrottled) {
+              isWheelThrottled = true;
+              goToSlide(currentSlide + 1);
+              setTimeout(() => { isWheelThrottled = false; }, 400);
+            }
+          }
+        }
+      } else if (e.deltaY < 0) {
+        // Scroll Up
+        if (isAtTop) {
+          if (currentSlide > 0) {
+            e.preventDefault();
+            if (!isWheelThrottled) {
+              isWheelThrottled = true;
+              goToSlide(currentSlide - 1);
+              setTimeout(() => { isWheelThrottled = false; }, 400);
+            }
+          }
+        }
+      }
+    }, { passive: false });
+
+    // Fullscreen Toggle
     btnFullscreen?.addEventListener('click', () => {
       if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen().catch(() => {});
