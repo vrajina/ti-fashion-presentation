@@ -1,4 +1,4 @@
-# TREND ISLAND × E-COMMERCE — Decision Deck v5
+﻿# TREND ISLAND × E-COMMERCE — Decision Deck v5
 
 > Sales deck для согласования **Фазы 1 (Lean MVP)**.  
 > Операционные детали (комиссии TI↔бренды, KPI-регламенты, SLA) — в проектной документации после старта.  
