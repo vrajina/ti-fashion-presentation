@@ -4,19 +4,20 @@ export interface Props {
   versionLabel?: string;
 }
 
-const { totalSlides = 10, versionLabel = 'V7' } = Astro.props;
+const { totalSlides = 11, versionLabel = 'V7' } = Astro.props;
 
 const slideTitles = [
   '1. Титул',
-  '2. Summary',
-  '3. Проблема',
-  '4. Барьеры',
-  '5. Решение',
-  '6. Ценность',
-  '7. Фаза 1',
+  '2. Суть',
+  '3. Парадокс',
+  '4. Страхи vs Факты',
+  '5. Архитектура',
+  '6. Что входит (MVP)',
+  '7. GMV-модель',
   '8. Команда',
-  '9. GMV',
-  '10. Decision',
+  '9. Смета',
+  '10. Эволюция (Фазы 2–3)',
+  '11. Согласование',
 ];
 ---
 

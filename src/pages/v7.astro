@@ -15,7 +15,7 @@ import '../styles/v7-light.css';
 </head>
 <body>
   <div class="deck-container">
-    <HeaderV4 totalSlides={10} />
+    <HeaderV4 totalSlides={11} />
 
     <!-- 01 Title -->
     <section class="slide active slide-title-bg" data-slide="0">
@@ -90,7 +90,7 @@ import '../styles/v7-light.css';
 
         <div class="callout-box" style="margin-top: 0.5rem;">
           <div class="decision-ask-label" style="margin-bottom: 0.2rem;">Главный инсайт</div>
-          <strong>Почему MVP, а не классика?</strong> Классический e-com обойдется в&nbsp;20–30&nbsp;млн&nbsp;₽ и&nbsp;годы разработки без гарантий. MVP-пилот на&nbsp;3–4 бренда позволяет быстро протестировать спрос и&nbsp;юнит-экономику.
+          <strong>Почему MVP, а не классика?</strong> Классический e-com обойдется в&nbsp;20–30&nbsp;млн&nbsp;₽ и&nbsp;годы разработки без гарантий. MVP-пилот до&nbsp;5 брендов позволяет быстро протестировать спрос и&nbsp;юнит-экономику.
         </div>
       </div>
     </section>
@@ -274,7 +274,7 @@ import '../styles/v7-light.css';
                   1,9–3,26 млн ₽
                   <div style="width: 15%; height: 6px; background: var(--text-main); margin-top: 4px; border-radius: 3px;"></div>
                 </td>
-                <td>3–4 бренда, базовый C&amp;C</td>
+                <td>До 5 брендов, базовый C&amp;C</td>
               </tr>
               <tr>
                 <td><strong>Фаза 2 (Масштаб)</strong></td>
@@ -395,10 +395,50 @@ import '../styles/v7-light.css';
       </div>
     </section>
 
-    <!-- 10 Closing / Ask -->
+    <!-- 10 Evolution -->
     <section class="slide" data-slide="9">
       <div class="slide-content">
-        <div class="fashion-pill">Слайд 10 / Согласование</div>
+        <div class="fashion-pill">Слайд 10 / Эволюция</div>
+        <h1 class="title-editorial">Развитие после пилота (Фазы 2–3)</h1>
+        <p class="subtitle-light">Стратегия масштабирования и&nbsp;роста выручки без потери контроля</p>
+
+        <div class="grid-2">
+          <div class="fashion-card-light">
+            <span class="badge-black">Фаза 2: Масштаб & LTV (Мес. 6–9)</span>
+            <div class="card-desc" style="margin-top: 0.75rem; font-size: 0.95rem; line-height: 1.5;">
+              После подтверждения модели MVP мы внедряем автоматизацию для роста среднего чека и&nbsp;удержания клиентов:
+            </div>
+            <ul class="clean-list" style="margin-top: 0.5rem; flex-grow: 1;">
+              <li><strong>1С-Интеграция:</strong> Асинхронная выгрузка успешных продаж в&nbsp;1С TI для авто-взаиморасчетов.</li>
+              <li><strong>Программа лояльности & Умные рекомендации:</strong> Интеграция Retail Rocket / Mindbox для кросс-продаж (лукбуки, «с этим покупают»).</li>
+              <li><strong>Отзывы & UGC:</strong> Сбор пользовательского контента и&nbsp;оценок.</li>
+              <li><strong>SEO-Машина:</strong> Автогенерация категорий под поисковые запросы Яндекса.</li>
+            </ul>
+          </div>
+          
+          <div class="fashion-card-light">
+            <span class="badge-black">Фаза 3: Экосистема (Мес. 10–14)</span>
+            <div class="card-desc" style="margin-top: 0.75rem; font-size: 0.95rem; line-height: 1.5;">
+              Превращение TI в&nbsp;лидирующую fashion-платформу локальных брендов с&nbsp;мобильным приложением:
+            </div>
+            <ul class="clean-list" style="margin-top: 0.5rem; flex-grow: 1;">
+              <li><strong>Кроссплатформенное приложение (Flutter):</strong> iOS/Android, Face ID, Push-уведомления (в т.ч. гео-пуши при входе в Авиапарк).</li>
+              <li><strong>Экспресс-доставка (Ship-from-Store):</strong> Курьерская доставка по Москве прямо со&nbsp;стойки Авиапарка (Яндекс/СДЭК).</li>
+              <li><strong>AI-Поиск:</strong> Масштабируемый поиск Elasticsearch для огромного каталога.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="callout-box" style="margin-top: 0.5rem; font-size: 0.85rem;">
+          <strong>Важно:</strong> Инвестиции Фаз 2–3 оцениваются отдельно после аудита 1С и&nbsp;БП. Переход к ним осуществляется только после того, как MVP (Фаза 1) покажет реальную юнит-экономику и&nbsp;первую прибыль.
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 Closing / Ask -->
+    <section class="slide" data-slide="10">
+      <div class="slide-content">
+        <div class="fashion-pill">Слайд 11 / Согласование</div>
         <h1 class="title-editorial">Резюмируем решение</h1>
         <p class="subtitle-light">Что предлагается утвердить сегодня</p>
 
@@ -408,7 +448,7 @@ import '../styles/v7-light.css';
             <li>Старт <strong>Фазы 1 (Lean MVP)</strong> — Click &amp; Collect для Trend Island</li>
             <li>Бюджет разработки <strong>5&nbsp;460&nbsp;000&nbsp;₽</strong></li>
             <li>Срок реализации <strong>5–6 месяцев</strong></li>
-            <li>Пилотный запуск на <strong>3–4 брендах-резидентах</strong></li>
+            <li>Пилотный запуск <strong>до 5 брендов-резидентов</strong></li>
           </ul>
         </div>
 
@@ -445,7 +485,7 @@ import '../styles/v7-light.css';
       </div>
     </section>
 
-    <FooterV7 totalSlides={10} versionLabel="V7" />
+    <FooterV7 totalSlides={11} versionLabel="V7" />
   </div>
 
   <script>
