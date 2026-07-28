@@ -18,26 +18,35 @@ import '../styles/v4-light.css';
   <div class="deck-container">
     <HeaderV4 totalSlides={10} currentVersion="v4" />
 
-    <!-- SLIDE 1: Title -->
-    <section class="slide active" data-slide="0">
-      <div class="slide-content" style="justify-content: center; min-height: 68vh;">
-        <div class="fashion-pill">Слайд 01 / <span class="nobr">E-Commerce</span> Стратегия</div>
+    <!-- SLIDE 1: Title with Full Background Image -->
+    <section class="slide active slide-title-bg" data-slide="0">
+      <div class="title-bg-image-wrapper">
+        <img 
+          src="https://s1.afisha.ru/mediastorage/80/c6/edfe5c1779f54667a7c667f7c680.jpg" 
+          alt="Trend Island Concept Store Aviapark" 
+          class="title-bg-img"
+        />
+        <div class="title-bg-overlay"></div>
+      </div>
 
-        <h1 class="title-editorial" style="font-size: clamp(2.2rem, 5.2vw, 4rem); max-width: 950px; margin-top: 1rem;">
-          <span class="nobr">TREND ISLAND</span> <span style="font-weight: 300; opacity: 0.5;">x</span> <span class="nobr">E-COMMERCE</span>
+      <div class="slide-content title-slide-content">
+        <div class="fashion-pill fashion-pill-light">Слайд 01 / <span class="nobr">E-Commerce</span> Стратегия</div>
+
+        <h1 class="title-editorial title-hero-white">
+          <span class="nobr">TREND ISLAND</span> <span style="font-weight: 300; opacity: 0.7;">x</span> <span class="nobr">E-COMMERCE</span>
         </h1>
         
-        <p class="subtitle-light" style="font-size: 1.25rem; font-weight: 400; color: #111111; max-width: 800px; margin-top: 0.5rem;">
+        <p class="subtitle-light subtitle-hero-white">
           План цифровой трансформации и&nbsp;запуска каналов онлайн-продаж <span class="nobr">Click &amp; Collect</span>
         </p>
 
         <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
-          <button id="btnExplore" class="cta-explore-btn" data-slide="1">
+          <button id="btnExplore" class="cta-explore-btn cta-explore-white" data-slide="1">
             Ознакомиться с планом →
           </button>
         </div>
 
-        <div style="margin-top: 2.5rem; font-size: 0.9rem; color: var(--text-muted); font-weight: 400;">
+        <div class="author-hero-white">
           Кадацкий Илья | <span class="nobr">E-commerce</span> эксперт | 2026
         </div>
       </div>
@@ -50,10 +59,10 @@ import '../styles/v4-light.css';
         <h1 class="title-editorial">Текущие ограничения оцифровки <span class="nobr">Trend Island</span></h1>
         <p class="subtitle-light">Ключевые упущенные возможности и&nbsp;факторы, сдерживающие рост онлайн-выручки универмага</p>
 
-        <div class="grid-2">
+        <div class="grid-3">
           <div class="fashion-card-light">
             <div class="card-step-num">01</div>
-            <div class="card-title">Веб-трафик сайта не&nbsp;монетизируется (0% онлайн-выручки)</div>
+            <div class="card-title">Веб-трафик сайта не&nbsp;монетизируется <span class="nobr">(0%&nbsp;онлайн-выручки)</span></div>
             <div class="card-desc">
               Ежемесячно на&nbsp;сайт <span class="nobr">Trend Island</span> заходит <strong>45&nbsp;000&nbsp;– 50&nbsp;000 посетителей</strong>, однако из-за отсутствия товарного каталога и&nbsp;возможности покупки этот трафик сгорает впустую.
             </div>
@@ -63,7 +72,7 @@ import '../styles/v4-light.css';
             <div class="card-step-num">02</div>
             <div class="card-title">Профили клиентов не&nbsp;обогащаются данными из&nbsp;онлайна</div>
             <div class="card-desc">
-              Покупатели в&nbsp;оффлайн-зале остаются относительно «анонимными». Без онлайн-витрины невозможно отследить истории просмотров, отложенные вещи, интерес к&nbsp;конкретным брендовым категориям и&nbsp;цифровой след клиента.
+              Покупатели в&nbsp;оффлайн-зале остаются относительно «анонимными». Без онлайн-витрины невозможно отследить истории просмотров, отложенные вещи и&nbsp;цифровой след клиента.
             </div>
           </div>
 
@@ -71,26 +80,27 @@ import '../styles/v4-light.css';
             <div class="card-step-num">03</div>
             <div class="card-title">Ограниченность цифрового арсенала маркетинга</div>
             <div class="card-desc">
-              Отсутствие витрины и&nbsp;оцифрованных профилей блокирует применение эффективных <span class="nobr">e-com</span> инструментов: перформанс-рекламы на&nbsp;конкретные товары, ретаргетинга, брошенных корзин, триггерных рассылок и&nbsp;персонализированных рекомендаций.
+              Отсутствие витрины и&nbsp;оцифрованных профилей блокирует применение эффективных <span class="nobr">e-com</span> инструментов: перформанс-рекламы, ретаргетинга, триггерных рассылок.
             </div>
           </div>
 
           <div class="fashion-card-light">
             <div class="card-step-num">04</div>
-            <div class="card-title">Упущенный «диванный» трафик и&nbsp;географические барьеры</div>
+            <div class="card-title">Упущенный «диванный» трафик и&nbsp;гео-барьеры</div>
             <div class="card-desc">
-              Покупатели в&nbsp;вечернее время, в&nbsp;выходные или проживающие в&nbsp;отдаленных районах Москвы не&nbsp;готовы ехать в&nbsp;ТЦ «Авиапарк» «наугад», не&nbsp;имея гарантии наличия нужной вещи и&nbsp;размера.
+              Покупатели в&nbsp;вечернее время или проживающие в&nbsp;отдаленных районах Москвы не&nbsp;готовы ехать в&nbsp;ТЦ «Авиапарк» «наугад», не&nbsp;имея гарантии наличия нужной вещи и&nbsp;размера.
             </div>
           </div>
-        </div>
 
-        <div class="callout-box">
-          📉 <strong>Негативные бизнес-последствия для <span class="nobr">Trend Island</span>:</strong>
-          <ul style="margin-left: 1.2rem; margin-top: 0.35rem; line-height: 1.5;">
-            <li><strong>Прямая потеря выручки:</strong> Покупатель, не найдя каталог на сайте, уходит за локальными брендами на сторонние маркетплейсы или сайты конкурентов.</li>
-            <li><strong>Медленный рост и слабая глубина работы с клиентской базой:</strong> Без сквозной аналитики и онлайн-данных сложно растить LTV и частоту повторных покупок.</li>
-            <li><strong>Высокая зависимость от оффлайн-трафика ТЦ «Авиапарк»:</strong> Выручка универмага напрямую завязана на внешний пешеходный трафик ТЦ, погоду, сезонность и транспортную доступность Ходынки.</li>
-          </ul>
+          <!-- Stretched 2-column Callout Box filling the bottom right area -->
+          <div class="callout-box col-span-2">
+            📉 <strong>Негативные бизнес-последствия для <span class="nobr">Trend Island</span>:</strong>
+            <ul style="margin-left: 1.2rem; margin-top: 0.3rem; line-height: 1.45; font-size: 0.85rem; color: var(--text-body);">
+              <li><strong>Прямая потеря выручки:</strong> Покупатель, не найдя каталог на сайте, уходит за локальными брендами на сторонние маркетплейсы или сайты конкурентов.</li>
+              <li><strong>Медленный рост LTV:</strong> Без сквозной аналитики и онлайн-данных сложно растить частоту повторных покупок и глубину чека.</li>
+              <li><strong>Высокая зависимость от оффлайн-трафика ТЦ «Авиапарк»:</strong> Выручка универмага напрямую завязана на внешний пешеходный трафик ТЦ, погоду и сезонность.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
