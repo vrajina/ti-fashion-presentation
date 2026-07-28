@@ -8,10 +8,10 @@ const { totalSlides = 10 } = Astro.props;
 
 <header class="header-v4">
   <div class="brand-group">
-    <a href="/" title="Trend Island Presentation" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
-      <span style="font-family: var(--font-title); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.12em;" class="nobr">TREND ISLAND</span>
-      <span style="color: var(--text-light); font-size: 0.8rem;">x</span>
-      <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);" class="nobr">E-COMMERCE</span>
+    <a href="/" title="Trend Island Presentation" class="brand-link">
+      <span class="brand-name nobr">TREND ISLAND</span>
+      <span class="brand-x">×</span>
+      <span class="brand-tag nobr">E-COMMERCE</span>
     </a>
   </div>
 
@@ -23,13 +23,13 @@ const { totalSlides = 10 } = Astro.props;
     </div>
 
     <div class="nav-buttons">
-      <button id="btnPrev" class="icon-btn" title="Предыдущий слайд (←)">
+      <button id="btnPrev" class="icon-btn" title="Предыдущий слайд (←)" aria-label="Предыдущий слайд">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
       </button>
-      <button id="btnNext" class="icon-btn" title="Следующий слайд (→)">
+      <button id="btnNext" class="icon-btn" title="Следующий слайд (→)" aria-label="Следующий слайд">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
       </button>
-      <button id="btnFullscreen" class="icon-btn" title="На весь экран">
+      <button id="btnFullscreen" class="icon-btn" title="На весь экран" aria-label="На весь экран">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
       </button>
     </div>
@@ -44,13 +44,14 @@ const { totalSlides = 10 } = Astro.props;
   .header-v4 {
     position: relative;
     z-index: 10;
-    height: 65px;
+    height: 62px;
     padding: 0 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #ffffff;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color, #d4d0c7);
+    box-shadow: 0 1px 0 rgba(10, 10, 10, 0.03);
   }
 
   .brand-group {
@@ -59,71 +60,110 @@ const { totalSlides = 10 } = Astro.props;
     gap: 1.5rem;
   }
 
+  .brand-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand-name {
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 0.92rem;
+    letter-spacing: 0.14em;
+    color: var(--text-main, #0a0a0a);
+  }
+
+  .brand-x {
+    color: var(--accent-metal, #8b7355);
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  .brand-tag {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--text-muted, #4f4c47);
+  }
+
   .header-controls {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.35rem;
   }
 
   .slide-indicator {
     font-family: var(--font-mono);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 500;
-    color: var(--text-main);
+    color: var(--text-main, #0a0a0a);
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .slide-indicator .current {
+    font-weight: 600;
   }
 
   .slide-indicator .sep {
-    color: var(--text-light);
+    color: var(--text-light, #7a756c);
+  }
+
+  .slide-indicator .total {
+    color: var(--text-muted, #4f4c47);
   }
 
   .nav-buttons {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.35rem;
   }
 
   .icon-btn {
     background: #ffffff;
-    border: 1px solid var(--border-color);
-    color: var(--text-main);
+    border: 1px solid var(--border-color, #d4d0c7);
+    color: var(--text-main, #0a0a0a);
     width: 36px;
     height: 36px;
-    border-radius: 6px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.18s ease;
   }
 
   .icon-btn:hover {
-    background: #111111;
-    color: #ffffff;
-    border-color: #111111;
+    background: #0a0a0a;
+    color: #f7f4ee;
+    border-color: #0a0a0a;
   }
 
   .progress-bar-v4 {
     position: relative;
     z-index: 10;
     width: 100%;
-    height: 3px;
-    background: #ebebeb;
+    height: 2px;
+    background: #e4e0d7;
   }
 
   .progress-fill-v4 {
     height: 100%;
     width: 10%;
-    background: var(--text-main);
+    background: linear-gradient(90deg, #0a0a0a 0%, #2c2416 100%);
     transition: width 0.3s ease-out;
   }
 
   @media (max-width: 768px) {
     .header-v4 {
-      padding: 0 1.25rem;
-      height: 60px;
+      padding: 0 1.15rem;
+      height: 56px;
     }
   }
 </style>

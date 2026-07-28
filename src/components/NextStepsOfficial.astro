@@ -2,12 +2,10 @@
 ---
 
 <div class="next-steps-official">
-  <div class="fashion-card-light steps-main-card">
-    <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
-      <span class="badge-black">РЕГЛАМЕНТ СТАРТА ПРОЕКТА</span>
-      <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); font-weight: 400;">
-        Этап 01 / Инициация
-      </span>
+  <div class="fashion-card-light steps-main-card fashion-card-featured">
+    <div class="steps-header">
+      <span class="badge-black">Регламент старта проекта</span>
+      <span class="steps-stage">Этап 01 · Инициация</span>
     </div>
 
     <div class="steps-timeline">
@@ -46,15 +44,13 @@
 
     <div class="contacts-bar">
       <div class="contacts-info">
-        <div>
-          <div class="contact-name">Кадацкий Илья</div>
-          <div class="contact-role"><span class="nobr">E-commerce</span> эксперт &amp; Руководитель проекта</div>
-        </div>
+        <div class="contact-name">Кадацкий Илья</div>
+        <div class="contact-role"><span class="nobr">E-commerce</span> эксперт &amp; Руководитель проекта</div>
       </div>
 
       <a href="https://t.me/ivkadatsky" target="_blank" rel="noopener noreferrer" class="contact-telegram-btn-card">
         <span class="tg-full-text">По всем вопросам: <strong class="tg-handle">@ivkadatsky</strong></span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.16l-1.97 9.28c-.15.67-.54.83-1.1.52l-3.04-2.24-1.47 1.41c-.16.16-.3.3-.61.3l.22-3.1 5.64-5.1c.25-.22-.05-.34-.38-.12l-6.97 4.39-3.01-.94c-.65-.2-.67-.65.14-.97l11.78-4.54c.55-.2 1.02.13.83.97z"/>
         </svg>
       </a>
@@ -65,106 +61,128 @@
 <style>
   .next-steps-official {
     width: 100%;
-    margin-top: 0.25rem;
+    margin-top: 0.15rem;
   }
 
   .steps-main-card {
-    border: 1px solid var(--border-color);
-    background: #ffffff;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.35rem;
+  }
+
+  .steps-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .steps-stage {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--accent-metal, #8b7355);
+    font-weight: 500;
+    letter-spacing: 0.06em;
   }
 
   .steps-timeline {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.25rem;
-    margin-top: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
   }
 
   .step-item {
     display: flex;
-    gap: 1rem;
-    background: var(--bg-card-alt);
-    padding: 1.1rem;
-    border-radius: 6px;
-    border: 1px solid var(--border-color);
+    gap: 0.9rem;
+    background: var(--bg-elevated, #faf9f6);
+    padding: 1.05rem 1.05rem 1.1rem;
+    border-radius: 5px;
+    border: 1px solid var(--border-color, #d4d0c7);
+    border-left: 3px solid var(--text-main, #0a0a0a);
+    transition: box-shadow 0.2s ease;
+  }
+
+  .step-item:hover {
+    box-shadow: 0 8px 22px rgba(20, 16, 10, 0.07);
   }
 
   .step-num {
     font-family: var(--font-title);
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #111111;
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--text-main, #0a0a0a);
     line-height: 1;
+    letter-spacing: -0.03em;
+    min-width: 1.6rem;
   }
 
   .step-body h4 {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #111111;
+    font-size: 0.94rem;
+    font-weight: 600;
+    color: var(--text-main, #0a0a0a);
     line-height: 1.35;
     margin-bottom: 0.35rem;
   }
 
   .step-body p {
     font-size: 0.82rem;
-    color: var(--text-body);
-    line-height: 1.45;
+    color: var(--text-body, #2a2a2a);
+    line-height: 1.48;
   }
 
   .contacts-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--border-color);
+    gap: 1.25rem;
+    padding-top: 1.15rem;
+    border-top: 1px solid var(--border-color, #d4d0c7);
     flex-wrap: wrap;
   }
 
   .contacts-info {
     display: flex;
-    align-items: center;
-    gap: 1.25rem;
+    flex-direction: column;
+    gap: 0.2rem;
   }
 
   .contact-name {
     font-family: var(--font-title);
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: #111111;
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--text-main, #0a0a0a);
   }
 
   .contact-role {
-    font-size: 0.82rem;
-    color: var(--text-muted);
+    font-size: 0.84rem;
+    color: var(--text-muted, #4f4c47);
   }
 
   .contact-telegram-btn-card {
     display: inline-flex;
     align-items: center;
     gap: 0.85rem;
-    background: #111111;
-    color: #ffffff;
-    padding: 0.85rem 1.4rem;
+    background: var(--text-main, #0a0a0a);
+    color: #f7f4ee;
+    padding: 0.9rem 1.35rem;
     border-radius: 6px;
     text-decoration: none;
-    transition: all 0.25s ease;
+    transition: all 0.22s ease;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(10, 10, 10, 0.14);
+    border: 1px solid var(--text-main, #0a0a0a);
   }
 
   .contact-telegram-btn-card:hover {
-    background: #2a2a2a;
+    background: #1c1c1c;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 28px rgba(10, 10, 10, 0.2);
   }
 
   .tg-full-text {
     font-size: 0.9rem;
-    color: #eeeeee;
+    color: rgba(247, 244, 238, 0.92);
   }
 
   .tg-handle {
@@ -177,7 +195,7 @@
   @media (max-width: 900px) {
     .contacts-bar {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: stretch;
     }
     .contact-telegram-btn-card {
       width: 100%;
