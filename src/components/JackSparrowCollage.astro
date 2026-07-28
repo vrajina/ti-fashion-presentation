@@ -1,0 +1,233 @@
+---
+import TILogoOfficial from './TILogoOfficial.astro';
+---
+
+<div class="jack-sparrow-container">
+  <div class="collage-card">
+    <div class="fashion-badge-black">🏴‍☠️ TREND ISLAND x CAPTAIN JACK SPARROW</div>
+    
+    <div class="collage-visual">
+      <!-- Background Store Image -->
+      <div class="store-bg">
+        <img 
+          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80" 
+          alt="Trend Island Concept Store Aviapark" 
+          class="store-img"
+        />
+        <div class="store-overlay"></div>
+      </div>
+
+      <!-- Captain Jack Sparrow Animated Overlay -->
+      <div class="pirate-overlay">
+        <img 
+          src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjdmZHFnMmkyNDVrdnlwMmkyd290bWFydGFzMTQzNHBhZGZkdWZraCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oX9AeVlKptfDk8e0bZ/giphy.gif" 
+          alt="Captain Jack Sparrow Trend Island Pirate" 
+          class="jack-gif"
+        />
+        <div class="pirate-hat-tag">МОДНЫЙ ПИРАТ ТРЕНДОВОГО ОСТРОВА</div>
+      </div>
+
+      <!-- Speech Bubble -->
+      <div class="speech-bubble">
+        <p class="quote">«— Смекаешь? Зачем нам обычный тяжелый e-commerce, если у нас есть свой Трендовый Остров?!»</p>
+        <span class="author">— Капитан Джек Воробей (Главный адепт Vibe Coding & Click-Collect)</span>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <div class="cta-text">
+        <TILogoOfficial height={28} color="#111111" />
+        <h3>Готовы к цифровой трансформации</h3>
+        <p>Утверждаем 3–4 пилотных бренда, запускаем UX/UI дизайн в Figma и выходим в онлайн!</p>
+      </div>
+
+      <a href="mailto:kadatsky@trendisland.ru" class="cta-button">
+        УТВЕРДИТЬ ПИЛОТ & СТАРТОВАТЬ 🚀
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .jack-sparrow-container {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .collage-card {
+    background: #ffffff;
+    border: 2px solid #111111;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .fashion-badge-black {
+    align-self: flex-start;
+    background: #111111;
+    color: #ffffff;
+    padding: 0.35rem 0.85rem;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  .collage-visual {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #111111;
+    border: 1px solid var(--border-color);
+  }
+
+  .store-bg {
+    position: absolute;
+    inset: 0;
+  }
+
+  .store-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.65) contrast(1.1);
+  }
+
+  .store-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, transparent 60%);
+  }
+
+  .pirate-overlay {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+  }
+
+  .jack-gif {
+    height: 90%;
+    max-height: 250px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));
+    border-radius: 8px 8px 0 0;
+  }
+
+  .pirate-hat-tag {
+    background: #ffffff;
+    color: #111111;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 4px 4px 0 0;
+    letter-spacing: 0.08em;
+    transform: translateY(-5px);
+  }
+
+  .speech-bubble {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    max-width: 460px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border: 1.5px solid #111111;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    z-index: 3;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+
+  .quote {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #111111;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+  }
+
+  .author {
+    font-size: 0.78rem;
+    color: #666666;
+    font-weight: 600;
+    display: block;
+  }
+
+  .cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .cta-text h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 0.4rem;
+  }
+
+  .cta-text p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+
+  .cta-button {
+    text-decoration: none;
+    background: #111111;
+    color: #ffffff;
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+  }
+
+  .cta-button:hover {
+    background: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 900px) {
+    .collage-visual {
+      height: 320px;
+    }
+    .speech-bubble {
+      left: 1rem;
+      top: 1rem;
+      right: 1rem;
+      max-width: calc(100% - 2rem);
+    }
+    .pirate-overlay {
+      right: 10px;
+      opacity: 0.4;
+    }
+    .cta-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .cta-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>

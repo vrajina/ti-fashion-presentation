@@ -1,0 +1,120 @@
+---
+export interface Props {
+  totalSlides?: number;
+}
+
+const { totalSlides = 10 } = Astro.props;
+
+const slideTitles = [
+  "1. Титул",
+  "2. Ограничения",
+  "3. Барьеры онлайна",
+  "4. Lean MVP & Решение",
+  "5. Бизнес-ценность",
+  "6. Схема Фаз",
+  "7. Сроки и Бюджет",
+  "8. Команда & AI Stack",
+  "9. Юнит-экономика",
+  "10. 🏴‍☠️ Трендовый Остров"
+];
+---
+
+<footer class="footer-v4">
+  <div class="keyboard-hint">
+    <span>Клавиши:</span>
+    <kbd>←</kbd> <kbd>→</kbd>
+  </div>
+
+  <div class="slide-tabs">
+    {slideTitles.map((title, idx) => (
+      <button class={`tab-btn ${idx === 0 ? 'active' : ''}`} data-slide={idx}>
+        {title}
+      </button>
+    ))}
+  </div>
+
+  <div class="copyright">
+    TREND ISLAND x E-COMMERCE 2026
+  </div>
+</footer>
+
+<style>
+  .footer-v4 {
+    position: relative;
+    z-index: 10;
+    height: 48px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.75rem;
+  }
+
+  .keyboard-hint {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-muted);
+  }
+
+  .keyboard-hint kbd {
+    background: #f0f0ed;
+    border: 1px solid #dcdcd6;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: var(--font-mono);
+    color: var(--text-main);
+    font-weight: 600;
+  }
+
+  .slide-tabs {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    overflow-x: auto;
+    max-width: 65%;
+  }
+
+  .tab-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-muted);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    font-family: var(--font-body);
+  }
+
+  .tab-btn:hover {
+    color: var(--text-main);
+    background: #f4f4f0;
+  }
+
+  .tab-btn.active {
+    background: #111111;
+    color: #ffffff;
+  }
+
+  .copyright {
+    color: var(--text-light);
+    font-family: var(--font-mono);
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 900px) {
+    .keyboard-hint, .copyright {
+      display: none;
+    }
+    .slide-tabs {
+      max-width: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
