@@ -1,5 +1,6 @@
 ﻿---
 import HeaderV4 from '../components/HeaderV4.astro';
+// archived snapshot of pre-visual-upgrade v4
 import FooterV4 from '../components/FooterV4.astro';
 import NextStepsOfficial from '../components/NextStepsOfficial.astro';
 import '../styles/v4-light.css';
@@ -10,7 +11,7 @@ import '../styles/v4-light.css';
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Trend Island — Click & Collect E-Commerce Стратегия</title>
+  <title>Trend Island — Click & Collect E-Commerce Стратегия v4 (archive)</title>
   <meta name="description" content="План цифровой трансформации и запуска каналов онлайн-продаж Click & Collect для Trend Island" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
@@ -33,9 +34,9 @@ import '../styles/v4-light.css';
         <div class="fashion-pill fashion-pill-light">Слайд 01 / <span class="nobr">E-Commerce</span> Стратегия</div>
 
         <h1 class="title-editorial title-hero-white">
-          <span class="nobr">TREND ISLAND</span> <span style="font-weight: 300; opacity: 0.7;">×</span> <span class="nobr">E-COMMERCE</span>
+          <span class="nobr">TREND ISLAND</span> <span style="font-weight: 300; opacity: 0.7;">x</span> <span class="nobr">E-COMMERCE</span>
         </h1>
-        <div class="title-hero-rule" aria-hidden="true"></div>
+        
         <p class="subtitle-light subtitle-hero-white">
           План цифровой трансформации и&nbsp;запуска каналов онлайн-продаж <span class="nobr">Click &amp; Collect</span>
         </p>
@@ -58,25 +59,6 @@ import '../styles/v4-light.css';
         <div class="fashion-pill">Слайд 02 / Аналитика</div>
         <h1 class="title-editorial">Текущие ограничения оцифровки <span class="nobr">Trend Island</span></h1>
         <p class="subtitle-light">Ключевые упущенные возможности и&nbsp;факторы, сдерживающие рост онлайн-выручки универмага</p>
-
-        <div class="metrics-strip">
-          <div class="metric-tile metric-tile-accent">
-            <div class="metric-tile-value">45–50&nbsp;000</div>
-            <div class="metric-tile-label">визитов сайта / мес</div>
-          </div>
-          <div class="metric-tile metric-tile-accent">
-            <div class="metric-tile-value">0&nbsp;₽</div>
-            <div class="metric-tile-label">онлайн-выручка сейчас</div>
-          </div>
-          <div class="metric-tile">
-            <div class="metric-tile-value">0%</div>
-            <div class="metric-tile-label">монетизация веб-трафика</div>
-          </div>
-          <div class="metric-tile">
-            <div class="metric-tile-value">Авиапарк</div>
-            <div class="metric-tile-label">зависимость от оффлайн-трафика ТЦ</div>
-          </div>
-        </div>
 
         <div class="grid-3">
           <div class="fashion-card-light">
@@ -182,46 +164,29 @@ import '../styles/v4-light.css';
         <h1 class="title-editorial">Решение: Поэтапный запуск Lean MVP и&nbsp;платформа управления</h1>
         <p class="subtitle-light">Трехуровневая архитектура решения на&nbsp;Фазе 1 (Lean MVP)</p>
 
-        <div class="arch-flow">
-          <div class="arch-node">
-            <div class="arch-node-num">Контур 01</div>
-            <div class="arch-node-title">Бренды = Source of Truth</div>
-            <div class="arch-node-desc">Резиденты сами ведут каталог, цены и&nbsp;остатки через Личный Кабинет, Excel или YML-фиды.</div>
+        <div class="grid-3">
+          <div class="fashion-card-light" class="contour-card">
+            <div class="card-meta">КОНТУР 01</div>
+            <div class="card-title">БРЕНДЫ = SOURCE OF TRUTH</div>
+            <div class="card-desc">
+              Операционный контур остатков: Резиденты сами ведут каталог, цены и&nbsp;остатки через Личный Кабинет, Excel или YML-фиды.
+            </div>
           </div>
-          <div class="arch-arrow" aria-hidden="true">→</div>
-          <div class="arch-node">
-            <div class="arch-node-num">Контур 02</div>
-            <div class="arch-node-title"><span class="nobr">Trend Island</span> = Control Plane</div>
-            <div class="arch-node-desc">Авто-нормализация фото (3:4), замеры в&nbsp;см, модерация карточек, SLA сборки через Telegram-бот.</div>
-          </div>
-          <div class="arch-arrow" aria-hidden="true">→</div>
-          <div class="arch-node">
-            <div class="arch-node-num">Контур 03</div>
-            <div class="arch-node-title"><span class="nobr">Click &amp; Collect</span> &amp; 54-ФЗ</div>
-            <div class="arch-node-desc">Выдача в&nbsp;ТЦ «Авиапарк», 1&nbsp;чек от&nbsp;<span class="nobr">Trend Island</span>, «Честный ЗНАК», начисление ПЛ.</div>
-          </div>
-        </div>
 
-        <div class="journey-row" style="margin-top: 0.85rem;">
-          <div class="journey-step">
-            <div class="journey-num">01</div>
-            <div class="journey-title">Выбрал</div>
-            <div class="journey-desc">Покупатель собирает корзину из&nbsp;любых брендов на&nbsp;витрине</div>
+          <div class="fashion-card-light" class="contour-card">
+            <div class="card-meta">КОНТУР 02</div>
+            <div class="card-title"><span class="nobr">TREND ISLAND</span> = CONTROL PLANE</div>
+            <div class="card-desc">
+              Контур контроля: Авто-нормализация фото (3:4), замеры в&nbsp;см, модерация карточек, SLA сборки через Telegram-бот.
+            </div>
           </div>
-          <div class="journey-step">
-            <div class="journey-num">02</div>
-            <div class="journey-title">Забронировал</div>
-            <div class="journey-desc">Онлайн-оплата с&nbsp;холдом или бронь с&nbsp;оплатой после примерки</div>
-          </div>
-          <div class="journey-step">
-            <div class="journey-num">03</div>
-            <div class="journey-title">Приехал</div>
-            <div class="journey-desc">Заказ собран брендами и&nbsp;готов на&nbsp;стойке в&nbsp;Авиапарке</div>
-          </div>
-          <div class="journey-step">
-            <div class="journey-num">04</div>
-            <div class="journey-title">Примерка / выкуп</div>
-            <div class="journey-desc">Единый чек, маркировка, ПЛ и&nbsp;допродажи в&nbsp;зале</div>
+
+          <div class="fashion-card-light" class="contour-card">
+            <div class="card-meta">КОНТУР 03</div>
+            <div class="card-title"><span class="nobr">CLICK &amp; COLLECT</span> &amp; 54-ФЗ</div>
+            <div class="card-desc">
+              Контур выдачи: Выдача в&nbsp;ТЦ «Авиапарк», 1 чек от&nbsp;<span class="nobr">Trend Island</span>, сканирование «Честный ЗНАК», начисление ПЛ.
+            </div>
           </div>
         </div>
 
@@ -249,27 +214,6 @@ import '../styles/v4-light.css';
         <div class="fashion-pill">Слайд 05 / Бизнес-Ценность</div>
         <h1 class="title-editorial">Что получает <span class="nobr">Trend Island</span> (Бизнес-ценность)</h1>
         <p class="subtitle-light">Стратегические преимущества и&nbsp;прямая финансовая отдача от&nbsp;внедрения платформы</p>
-
-        <div class="ba-grid">
-          <div class="ba-col ba-before">
-            <span class="ba-label">Сейчас</span>
-            <ul class="ba-list">
-              <li>50&nbsp;000 визитов сайта без покупки</li>
-              <li>0&nbsp;₽ онлайн-выручки</li>
-              <li>Анонимный оффлайн-покупатель</li>
-              <li>Зависимость от трафика ТЦ «Авиапарк»</li>
-            </ul>
-          </div>
-          <div class="ba-col ba-after">
-            <span class="ba-label">После Фазы 1</span>
-            <ul class="ba-list">
-              <li>Витрина + <span class="nobr">Click &amp; Collect</span></li>
-              <li>Первая онлайн-выручка и&nbsp;оцифрованный спрос</li>
-              <li>Профили, ПЛ и&nbsp;база для CDP</li>
-              <li>Трафик в&nbsp;зал + допродажи на&nbsp;стойке</li>
-            </ul>
-          </div>
-        </div>
 
         <div class="grid-2">
           <div class="fashion-card-light">
@@ -314,48 +258,38 @@ import '../styles/v4-light.css';
         <h1 class="title-editorial">Схема фаз и&nbsp;Дорожная карта развития платформы</h1>
         <p class="subtitle-light">Пошаговое развитие от&nbsp;фокусного пилота к&nbsp;масштабной омниканальной экосистеме</p>
 
-        <div class="roadmap-timeline">
-          <div class="roadmap-phase">
-            <div class="roadmap-dot-row"><span class="roadmap-dot roadmap-dot-active"></span></div>
-            <div class="roadmap-card roadmap-card-primary">
-              <span class="badge-black">Фаза 1</span>
-              <div class="roadmap-duration">5–6 месяцев · сейчас</div>
-              <div class="card-title" style="font-size: 1.2rem;">Тестовый пилот (Lean MVP)</div>
-              <div class="card-price price-rub">5&nbsp;460&nbsp;000&nbsp;₽</div>
-              <ul class="clean-list">
-                <li>Nuxt 3 витрина &amp; ЛК брендов</li>
-                <li>АРМ стойки &amp; <span class="nobr">Click &amp; Collect</span></li>
-                <li>Первая онлайн-выручка</li>
-              </ul>
-            </div>
+        <div class="grid-3">
+          <div class="fashion-card-light fashion-card-featured">
+            <span class="badge-black">ФАЗА 1: 5–6 МЕСЯЦЕВ</span>
+            <div class="card-title" style="font-size: 1.25rem; margin-top: 0.5rem;">Тестовый Пилот (Lean MVP)</div>
+            <div class="card-price">5&nbsp;460&nbsp;000 ₽</div>
+            <ul class="clean-list">
+              <li>Nuxt 3 Витрина &amp; ЛК Брендов</li>
+              <li>АРМ Стойки &amp; <span class="nobr">Click &amp; Collect</span></li>
+              <li>Первая онлайн-выручка (5.46 млн ₽)</li>
+            </ul>
           </div>
-          <div class="roadmap-phase">
-            <div class="roadmap-dot-row"><span class="roadmap-dot"></span></div>
-            <div class="roadmap-card">
-              <span class="fashion-pill fashion-pill-metal">Фаза 2</span>
-              <div class="roadmap-duration">3,5–4,5 месяца</div>
-              <div class="card-title" style="font-size: 1.2rem;">Масштабирование &amp; LTV</div>
-              <div class="card-price-muted price-rub">1&nbsp;440&nbsp;000 – 3&nbsp;540&nbsp;000&nbsp;₽</div>
-              <ul class="clean-list">
-                <li>Автоматизация 1С &amp; ПЛ</li>
-                <li>Рекомендации &amp; UGC</li>
-                <li>Shoppable лукбуки &amp; SEO</li>
-              </ul>
-            </div>
+
+          <div class="fashion-card-light">
+            <span class="fashion-pill" style="margin-bottom: 0.2rem;">ФАЗА 2: 3.5–4.5 МЕС</span>
+            <div class="card-title" style="font-size: 1.25rem;">Масштабирование &amp; LTV</div>
+            <div class="card-price-muted">1.44 – 3.54 млн ₽</div>
+            <ul class="clean-list">
+              <li>Автоматизация 1С &amp; Программы Лояльности</li>
+              <li>Товарные рекомендации &amp; UGC</li>
+              <li>Shoppable Лукбуки &amp; SEO-автогенератор</li>
+            </ul>
           </div>
-          <div class="roadmap-phase">
-            <div class="roadmap-dot-row"><span class="roadmap-dot roadmap-dot-muted"></span></div>
-            <div class="roadmap-card">
-              <span class="fashion-pill">Фаза 3</span>
-              <div class="roadmap-duration">4–5 месяцев</div>
-              <div class="card-title" style="font-size: 1.2rem;">Экосистема &amp; Экспансия</div>
-              <div class="card-price-muted price-rub">2&nbsp;430&nbsp;000 – 3&nbsp;600&nbsp;000&nbsp;₽</div>
-              <ul class="clean-list">
-                <li>Flutter App iOS / Android</li>
-                <li>ИИ-поиск / Elasticsearch</li>
-                <li>Экспресс-доставка курьерами</li>
-              </ul>
-            </div>
+
+          <div class="fashion-card-light">
+            <span class="fashion-pill" style="margin-bottom: 0.2rem;">ФАЗА 3: 4–5 МЕСЯЦЕВ</span>
+            <div class="card-title" style="font-size: 1.25rem;">Экосистема &amp; Экспансия</div>
+            <div class="card-price-muted">2.43 – 3.60 млн ₽</div>
+            <ul class="clean-list">
+              <li>Flutter App iOS / Android</li>
+              <li>ИИ-поиск / Elasticsearch</li>
+              <li>Экспресс-доставка Курьерами</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -369,9 +303,9 @@ import '../styles/v4-light.css';
         <p class="subtitle-light">Детальный функциональный состав всех этапов развития платформы</p>
 
         <div class="grid-3">
-          <div class="fashion-card-light fashion-card-featured">
-            <div class="card-meta">Фаза 1 · тестовый пилот (5–6 мес)</div>
-            <div class="card-title price-rub">5&nbsp;460&nbsp;000&nbsp;₽ <span style="font-size: 0.75rem; font-weight: 400; color: var(--text-muted);">(под ключ)</span></div>
+          <div class="fashion-card-light">
+            <div class="card-meta">ФАЗА 1: ТЕСТОВЫЙ ПИЛОТ (5–6 МЕС)</div>
+            <div class="card-title">5&nbsp;460&nbsp;000 ₽ <span style="font-size: 0.75rem; font-weight: 400; color: var(--text-muted);">(под ключ)</span></div>
             
             <ul class="phase-detail-list">
               <li><strong>Премиальный Fashion-сайт на Nuxt 3 (Vue 3):</strong> листинги, быстрый поиск PostgreSQL FTS, фильтры, карточки товаров (PDP), ЛК покупателя, корзина, мобильный чекаут, персональная страница бренда.</li>
@@ -385,8 +319,8 @@ import '../styles/v4-light.css';
           </div>
 
           <div class="fashion-card-light">
-            <div class="card-meta">Фаза 2 · масштабирование (3,5–4,5 мес)</div>
-            <div class="card-title price-rub">1&nbsp;440&nbsp;000 – 3&nbsp;540&nbsp;000&nbsp;₽</div>
+            <div class="card-meta">ФАЗА 2: МАСШТАБИРОВАНИЕ (3.5–4.5 МЕС)</div>
+            <div class="card-title">1&nbsp;440&nbsp;000 – 3&nbsp;540&nbsp;000 ₽</div>
             
             <ul class="phase-detail-list">
               <li><strong>Интеграция с учетной системой 1С:</strong> асинхронная выгрузка выкупленных чеков и комиссии.</li>
@@ -400,8 +334,8 @@ import '../styles/v4-light.css';
           </div>
 
           <div class="fashion-card-light">
-            <div class="card-meta">Фаза 3 · экосистема (4–5 мес)</div>
-            <div class="card-title price-rub">2&nbsp;430&nbsp;000 – 3&nbsp;600&nbsp;000&nbsp;₽</div>
+            <div class="card-meta">ФАЗА 3: ЭКОСИСТЕМА (4–5 МЕС)</div>
+            <div class="card-title">2&nbsp;430&nbsp;000 – 3&nbsp;600&nbsp;000 ₽</div>
             
             <ul class="phase-detail-list">
               <li><strong>Мобильное Приложение Flutter (iOS/Android):</strong> 60–120 fps UX, пуш-уведомления, гео-пуши при входе в ТЦ «Авиапарк», QR-карта вызова заказа.</li>
@@ -456,27 +390,8 @@ import '../styles/v4-light.css';
         <div class="fashion-pill">Слайд 09 / Финансовая Модель</div>
         <h1 class="title-editorial">Юнит-экономика и&nbsp;финансовый потенциал</h1>
         <p class="subtitle-light">
-          Исходный трафик сайта (SimilarWeb): 45&nbsp;000 – 50&nbsp;000 визитов/мес · Текущая онлайн-выручка: 0&nbsp;₽ · Бенчмарки Fashion <span class="nobr">Click &amp; Collect</span>: AOV ~8&nbsp;500&nbsp;₽, выкуп на&nbsp;стойке ~75–80%
+          Исходный трафик сайта (SimilarWeb): 45&nbsp;000 – 50&nbsp;000 визитов/мес | Текущая онлайн-выручка: 0&nbsp;₽ | Бенчмарки Fashion <span class="nobr">Click &amp; Collect</span>: AOV ~8&nbsp;500&nbsp;₽, Выкуп на&nbsp;стойке ~75–80%
         </p>
-
-        <div class="metrics-strip">
-          <div class="metric-tile metric-tile-accent">
-            <div class="metric-tile-value">5&nbsp;460&nbsp;000&nbsp;₽</div>
-            <div class="metric-tile-label">инвестиции в&nbsp;Фазу 1</div>
-          </div>
-          <div class="metric-tile metric-tile-accent">
-            <div class="metric-tile-value">1,9–3,26&nbsp;млн&nbsp;₽</div>
-            <div class="metric-tile-label">прогноз GMV / мес (Фаза 1)</div>
-          </div>
-          <div class="metric-tile">
-            <div class="metric-tile-value">4–6 мес</div>
-            <div class="metric-tile-label">горизонт окупаемости пилота*</div>
-          </div>
-          <div class="metric-tile">
-            <div class="metric-tile-value">0,6–0,8%</div>
-            <div class="metric-tile-label">целевая CR на&nbsp;3–4 брендах</div>
-          </div>
-        </div>
 
         <!-- Desktop Table -->
         <div class="table-wrapper desktop-only">
@@ -499,8 +414,8 @@ import '../styles/v4-light.css';
                 <td>0.6% – 0.8% <span style="font-size: 0.75rem; color: var(--text-muted);">(3–4 бренда)</span></td>
                 <td>225 – 384</td>
                 <td>8&nbsp;500 ₽</td>
-                <td class="metric-value">1,9 – 3,26 млн ₽ / мес<br/><span style="font-size: 0.78rem; color: var(--text-muted);">(~11,5–19,5 млн ₽ за 6 мес)</span></td>
-                <td><span class="badge-black">Окупаемость пилота (5&nbsp;460&nbsp;000&nbsp;₽) за 4–6 месяцев*</span></td>
+                <td class="metric-value">1.9 – 3.26 млн ₽ / мес<br/><span style="font-size: 0.78rem; color: var(--text-muted);">(~11.5–19.5 млн ₽ за 6 мес)</span></td>
+                <td><span class="badge-black">Полная окупаемость пилота (5.46 млн ₽) за 4–6 месяцев!</span></td>
               </tr>
               <tr>
                 <td><strong>ФАЗА 2: Масштабирование</strong> <span>(6–9 мес)</span></td>
@@ -508,7 +423,7 @@ import '../styles/v4-light.css';
                 <td>1.4% – 1.6% <span style="font-size: 0.75rem; color: var(--text-muted);">(Retail Rocket)</span></td>
                 <td>975 – 1&nbsp;408</td>
                 <td>9&nbsp;000 ₽</td>
-                <td class="metric-value">8,7 – 12,6 млн ₽ / мес</td>
+                <td class="metric-value">8.7 – 12.6 млн ₽ / мес</td>
                 <td>Стабильный рост LTV и маржинальности</td>
               </tr>
               <tr>
@@ -517,7 +432,7 @@ import '../styles/v4-light.css';
                 <td>2.2% – 2.6% <span style="font-size: 0.75rem; color: var(--text-muted);">(App CR ~3.5%)</span></td>
                 <td>2&nbsp;805 – 4&nbsp;420</td>
                 <td>9&nbsp;500 ₽</td>
-                <td class="metric-value">26,6 – 41,9 млн ₽ / мес</td>
+                <td class="metric-value">26.6 – 41.9 млн ₽ / мес</td>
                 <td>Масштабирование в лидирующую онлайн-платформу</td>
               </tr>
             </tbody>
@@ -528,24 +443,24 @@ import '../styles/v4-light.css';
         <div class="mobile-only" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 0.5rem;">
           <div class="fashion-card-light fashion-card-featured">
             <span class="badge-black">ФАЗА 1: LEAN MVP</span>
-            <div style="font-family: var(--font-title); font-size: 1.35rem; font-weight: 500; margin-top: 0.3rem;">1,9 – 3,26 млн ₽ / мес</div>
+            <div style="font-family: var(--font-title); font-size: 1.35rem; font-weight: 500; margin-top: 0.3rem;">1.9 – 3.26 млн ₽ / мес</div>
             <div style="font-size: 0.85rem; color: var(--text-body); line-height: 1.5;">
               • Трафик: 50–60k | CR: 0.6%–0.8% (3–4 бренда)<br/>
               • Чеков: 225–384 | AOV: 8&nbsp;500&nbsp;₽
             </div>
             <div style="font-weight: 500; color: #111111; font-size: 0.82rem; margin-top: 0.4rem;">
-              ⚡ Окупаемость пилота (5&nbsp;460&nbsp;000&nbsp;₽) за 4–6 месяцев*
+              ⚡ Полная окупаемость пилота (5.46 млн ₽) за 4–6 месяцев!
             </div>
           </div>
 
           <div class="fashion-card-light">
             <span class="fashion-pill">ФАЗА 2: МАСШТАБИРОВАНИЕ</span>
-            <div style="font-family: var(--font-title); font-size: 1.3rem; font-weight: 500;">8,7 – 12,6 млн ₽ / мес</div>
+            <div style="font-family: var(--font-title); font-size: 1.3rem; font-weight: 500;">8.7 – 12.6 млн ₽ / мес</div>
           </div>
 
           <div class="fashion-card-light">
             <span class="fashion-pill">ФАЗА 3: ЭКОСИСТЕМА</span>
-            <div style="font-family: var(--font-title); font-size: 1.3rem; font-weight: 500;">26,6 – 41,9 млн ₽ / мес</div>
+            <div style="font-family: var(--font-title); font-size: 1.3rem; font-weight: 500;">26.6 – 41.9 млн ₽ / мес</div>
           </div>
         </div>
 
@@ -706,3 +621,4 @@ import '../styles/v4-light.css';
   </script>
 </body>
 </html>
+
