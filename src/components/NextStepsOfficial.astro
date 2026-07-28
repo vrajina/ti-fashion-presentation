@@ -1,12 +1,11 @@
 ---
-import TILogoOfficial from './TILogoOfficial.astro';
 ---
 
 <div class="next-steps-official">
   <div class="fashion-card-light steps-main-card">
     <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
       <span class="badge-black">РЕГЛАМЕНТ СТАРТА ПРОЕКТА</span>
-      <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">
+      <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); font-weight: 400;">
         Этап 01 / Инициация
       </span>
     </div>
@@ -16,7 +15,7 @@ import TILogoOfficial from './TILogoOfficial.astro';
         <div class="step-num">01</div>
         <div class="step-body">
           <h4>Согласование условий и подписание договора</h4>
-          <p>Фиксация технического задания, сметы Фазы 1 (5,46&nbsp;млн&nbsp;₽ «под&nbsp;ключ») и регламентов взаимодействия.</p>
+          <p>Фиксация технического задания, сметы Фазы 1 (5,46&nbsp;млн&nbsp;₽ «под&nbsp;ключ») и&nbsp;регламентов взаимодействия.</p>
         </div>
       </div>
 
@@ -24,33 +23,32 @@ import TILogoOfficial from './TILogoOfficial.astro';
         <div class="step-num">02</div>
         <div class="step-body">
           <h4>Утверждение 3–4 пилотных брендов-резидентов</h4>
-          <p>Отбор ключевых брендов для первого этапа обкатки каталога, остатков и регламентов сборки в ТЦ «Авиапарк».</p>
+          <p>Отбор ключевых брендов для первого этапа обкатки каталога, остатков и&nbsp;регламентов сборки в&nbsp;ТЦ «Авиапарк».</p>
         </div>
       </div>
 
       <div class="step-item">
         <div class="step-num">03</div>
         <div class="step-body">
-          <h4>Проектирование Fashion UX/UI в Figma (Месяцы 1–2)</h4>
-          <p>Разработка прототипов витрины, UI-Kit под брендбук Trend Island и кастомных интерфейсов ЛК & АРМ.</p>
+          <h4>Проектирование Fashion UX/UI в&nbsp;Figma (Месяцы 1–2)</h4>
+          <p>Разработка прототипов витрины, UI-Kit под брендбук <span class="nobr">Trend Island</span> и&nbsp;кастомных интерфейсов ЛК &amp; АРМ.</p>
         </div>
       </div>
 
       <div class="step-item">
         <div class="step-num">04</div>
         <div class="step-body">
-          <h4>Техническая разработка и запуск Click & Collect (Месяцы 5–6)</h4>
-          <p>Программирование ядра, интеграция ОФД 54-ФЗ, тестирование стойки выдачи и старт продаж.</p>
+          <h4>Техническая разработка и&nbsp;запуск Click &amp; Collect (Месяцы 5–6)</h4>
+          <p>Программирование ядра, интеграция ОФД 54-ФЗ, тестирование стойки выдачи и&nbsp;старт продаж.</p>
         </div>
       </div>
     </div>
 
     <div class="contacts-bar">
       <div class="contacts-info">
-        <TILogoOfficial height={26} color="#111111" />
         <div>
           <div class="contact-name">Кадацкий Илья</div>
-          <div class="contact-role">E-commerce эксперт &amp; Руководитель проекта</div>
+          <div class="contact-role"><span class="nobr">E-commerce</span> эксперт &amp; Руководитель проекта</div>
         </div>
       </div>
 
@@ -74,7 +72,7 @@ import TILogoOfficial from './TILogoOfficial.astro';
   }
 
   .steps-main-card {
-    border: 1.5px solid #111111;
+    border: 1px solid var(--border-color);
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -100,16 +98,16 @@ import TILogoOfficial from './TILogoOfficial.astro';
   .step-num {
     font-family: var(--font-title);
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 400;
     color: #111111;
     line-height: 1;
   }
 
   .step-body h4 {
     font-size: 0.95rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #111111;
-    line-height: 1.3;
+    line-height: 1.35;
     margin-bottom: 0.35rem;
   }
 
@@ -138,7 +136,7 @@ import TILogoOfficial from './TILogoOfficial.astro';
   .contact-name {
     font-family: var(--font-title);
     font-size: 1.05rem;
-    font-weight: 800;
+    font-weight: 500;
     color: #111111;
   }
 
@@ -168,7 +166,7 @@ import TILogoOfficial from './TILogoOfficial.astro';
     gap: 0.4rem;
     color: #ffffff;
     font-family: var(--font-mono);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 0.92rem;
     text-decoration: none;
     background: rgba(255, 255, 255, 0.15);
@@ -179,7 +177,6 @@ import TILogoOfficial from './TILogoOfficial.astro';
 
   .tg-link:hover {
     background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-1px);
   }
 
   @media (max-width: 900px) {

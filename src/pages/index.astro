@@ -1,7 +1,6 @@
 ---
 import HeaderV4 from '../components/HeaderV4.astro';
 import FooterV4 from '../components/FooterV4.astro';
-import TILogoOfficial from '../components/TILogoOfficial.astro';
 import NextStepsOfficial from '../components/NextStepsOfficial.astro';
 import '../styles/v4-light.css';
 ---
@@ -21,28 +20,25 @@ import '../styles/v4-light.css';
 
     <!-- SLIDE 1: Title -->
     <section class="slide active" data-slide="0">
-      <div class="slide-content" style="justify-content: center; min-height: 65vh;">
-        <div class="fashion-pill">Слайд 01 / E-Commerce Стратегия</div>
-        
-        <div style="margin: 1.5rem 0 1rem 0;">
-          <TILogoOfficial height={40} color="#111111" />
-        </div>
+      <div class="slide-content" style="justify-content: center; min-height: 68vh;">
+        <div class="fashion-pill">Слайд 01 / <span class="nobr">E-Commerce</span> Стратегия</div>
 
-        <h1 class="title-editorial" style="font-size: clamp(2.2rem, 5vw, 3.8rem); max-width: 900px;">
-          TREND ISLAND <span style="font-weight: 300; opacity: 0.6;">x</span> E-COMMERCE
+        <h1 class="title-editorial" style="font-size: clamp(2.2rem, 5.2vw, 4rem); max-width: 950px; margin-top: 1rem;">
+          <span class="nobr">TREND ISLAND</span> <span style="font-weight: 300; opacity: 0.5;">x</span> <span class="nobr">E-COMMERCE</span>
         </h1>
         
-        <p class="subtitle-light" style="font-size: 1.25rem; font-weight: 500; color: #111111;">
-          План цифровой трансформации и&nbsp;запуска каналов онлайн-продаж Click&nbsp;&amp;&nbsp;Collect
+        <p class="subtitle-light" style="font-size: 1.25rem; font-weight: 400; color: #111111; max-width: 800px; margin-top: 0.5rem;">
+          План цифровой трансформации и&nbsp;запуска каналов онлайн-продаж <span class="nobr">Click &amp; Collect</span>
         </p>
 
-        <div class="fashion-card-light" style="max-width: 480px; margin-top: 1.5rem; border-left: 3px solid #111111;">
-          <div style="font-family: var(--font-title); font-size: 1.1rem; font-weight: 700; color: #111111;">
-            Кадацкий Илья
-          </div>
-          <div style="font-size: 0.88rem; color: var(--text-muted); font-weight: 600;">
-            E-commerce эксперт | 2026
-          </div>
+        <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+          <button id="btnExplore" class="cta-explore-btn" data-slide="1">
+            Ознакомиться с планом →
+          </button>
+        </div>
+
+        <div style="margin-top: 2.5rem; font-size: 0.9rem; color: var(--text-muted); font-weight: 400;">
+          Кадацкий Илья | <span class="nobr">E-commerce</span> эксперт | 2026
         </div>
       </div>
     </section>
@@ -51,45 +47,50 @@ import '../styles/v4-light.css';
     <section class="slide" data-slide="1">
       <div class="slide-content">
         <div class="fashion-pill">Слайд 02 / Аналитика</div>
-        <h1 class="title-editorial">Текущие ограничения оцифровки Trend&nbsp;Island</h1>
+        <h1 class="title-editorial">Текущие ограничения оцифровки <span class="nobr">Trend Island</span></h1>
         <p class="subtitle-light">Ключевые упущенные возможности и&nbsp;факторы, сдерживающие рост онлайн-выручки универмага</p>
 
         <div class="grid-2">
           <div class="fashion-card-light">
             <div class="card-step-num">01</div>
-            <div class="card-title">Веб-трафик сайта не&nbsp;монетизируется (0% выручки)</div>
+            <div class="card-title">Веб-трафик сайта не&nbsp;монетизируется (0% онлайн-выручки)</div>
             <div class="card-desc">
-              Ежемесячно на&nbsp;сайт Trend&nbsp;Island заходит <strong>45&nbsp;000&nbsp;– 50&nbsp;000 посетителей</strong>, однако из-за отсутствия каталога и&nbsp;возможности покупки этот трафик сгорает впустую.
+              Ежемесячно на&nbsp;сайт <span class="nobr">Trend Island</span> заходит <strong>45&nbsp;000&nbsp;– 50&nbsp;000 посетителей</strong>, однако из-за отсутствия товарного каталога и&nbsp;возможности покупки этот трафик сгорает впустую.
             </div>
           </div>
 
           <div class="fashion-card-light">
             <div class="card-step-num">02</div>
-            <div class="card-title">Профили клиентов не&nbsp;обогащаются онлайн-данными</div>
+            <div class="card-title">Профили клиентов не&nbsp;обогащаются данными из&nbsp;онлайна</div>
             <div class="card-desc">
-              Покупатели в&nbsp;оффлайн-зале остаются относительно «анонимными». Без онлайн-витрины невозможно отследить истории просмотров и&nbsp;интерес к&nbsp;конкретным брендовым категориям.
+              Покупатели в&nbsp;оффлайн-зале остаются относительно «анонимными». Без онлайн-витрины невозможно отследить истории просмотров, отложенные вещи, интерес к&nbsp;конкретным брендовым категориям и&nbsp;цифровой след клиента.
             </div>
           </div>
 
           <div class="fashion-card-light">
             <div class="card-step-num">03</div>
-            <div class="card-title">Ограниченность цифрового маркетинга</div>
+            <div class="card-title">Ограниченность цифрового арсенала маркетинга</div>
             <div class="card-desc">
-              Отсутствие витрины блокирует эффективные e-com инструменты: перформанс-рекламу на&nbsp;конкретные товары, ретаргетинг, брошенные корзины и&nbsp;персонализацию.
+              Отсутствие витрины и&nbsp;оцифрованных профилей блокирует применение эффективных <span class="nobr">e-com</span> инструментов: перформанс-рекламы на&nbsp;конкретные товары, ретаргетинга, брошенных корзин, триггерных рассылок и&nbsp;персонализированных рекомендаций.
             </div>
           </div>
 
           <div class="fashion-card-light">
             <div class="card-step-num">04</div>
-            <div class="card-title">Упущенный «диванный» трафик и&nbsp;гео-барьеры</div>
+            <div class="card-title">Упущенный «диванный» трафик и&nbsp;географические барьеры</div>
             <div class="card-desc">
-              Покупатели в&nbsp;вечернее время или проживающие в&nbsp;отдаленных районах Москвы не&nbsp;готовы ехать в&nbsp;ТЦ «Авиапарк» «наугад», не&nbsp;имея гарантии наличия вещи и&nbsp;размера.
+              Покупатели в&nbsp;вечернее время, в&nbsp;выходные или проживающие в&nbsp;отдаленных районах Москвы не&nbsp;готовы ехать в&nbsp;ТЦ «Авиапарк» «наугад», не&nbsp;имея гарантии наличия нужной вещи и&nbsp;размера.
             </div>
           </div>
         </div>
 
         <div class="callout-box">
-          📉 <strong>Бизнес-последствия:</strong> Прямая потеря выручки в&nbsp;пользу конкурентов, отсутствие сквозной аналитики LTV и&nbsp;100% зависимость от&nbsp;внешнего пешеходного трафика ТЦ «Авиапарк».
+          📉 <strong>Негативные бизнес-последствия для <span class="nobr">Trend Island</span>:</strong>
+          <ul style="margin-left: 1.2rem; margin-top: 0.35rem; line-height: 1.5;">
+            <li><strong>Прямая потеря выручки:</strong> Покупатель, не найдя каталог на сайте, уходит за локальными брендами на сторонние маркетплейсы или сайты конкурентов.</li>
+            <li><strong>Медленный рост и слабая глубина работы с клиентской базой:</strong> Без сквозной аналитики и онлайн-данных сложно растить LTV и частоту повторных покупок.</li>
+            <li><strong>Высокая зависимость от оффлайн-трафика ТЦ «Авиапарк»:</strong> Выручка универмага напрямую завязана на внешний пешеходный трафик ТЦ, погоду, сезонность и транспортную доступность Ходынки.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -99,7 +100,7 @@ import '../styles/v4-light.css';
       <div class="slide-content">
         <div class="fashion-pill">Слайд 03 / Специфика Модели</div>
         <h1 class="title-editorial">Что мешает традиционному развитию онлайна?</h1>
-        <p class="subtitle-light">Почему стандартный e-commerce подход не&nbsp;подходит для формата универмага локальных брендов</p>
+        <p class="subtitle-light">Специфика формата универмага и&nbsp;ключевые барьеры роста цифровых продаж</p>
 
         <div class="grid-2">
           <div class="fashion-card-light">
@@ -108,7 +109,7 @@ import '../styles/v4-light.css';
             </div>
             <div class="card-title">Формат универмага и&nbsp;отсутствие единого склада</div>
             <div class="card-desc">
-              В&nbsp;Trend&nbsp;Island торгуют десятки независимых брендов-резидентов. Единого центра информации о&nbsp;товарах и&nbsp;остатках не&nbsp;существует — стоки знает только бренд на&nbsp;своей точке.
+              В&nbsp;<span class="nobr">Trend Island</span> торгуют десятки независимых брендов-резидентов. Единого центра информации о&nbsp;товарах, ценах и&nbsp;остатках не&nbsp;существует — актуальные стоки знает только бренд на&nbsp;своей точке.
             </div>
           </div>
 
@@ -116,9 +117,9 @@ import '../styles/v4-light.css';
             <div style="display: flex; justify-content: space-between; align-items: center;">
               <span class="badge-black">СПЕЦИФИКА 02</span>
             </div>
-            <div class="card-title">Сложность и&nbsp;дороговизна классического IT (20–30&nbsp;млн&nbsp;₽)</div>
+            <div class="card-title">Сложность и&nbsp;дороговизна классического IT-подхода</div>
             <div class="card-desc">
-              Создание IT-центра традиционным путем требует десятков миллионов рублей инвестиций, сложнейшей интеграции с&nbsp;1С каждого резидента и&nbsp;большого штата.
+              Создание единого IT-центра «под ключ» традиционным путем требует десятков миллионов рублей инвестиций (20–30&nbsp;млн&nbsp;₽), сложнейшей интеграции с&nbsp;1С каждого резидента и&nbsp;формирования отдельной штатной <span class="nobr">e-commerce</span> команды.
             </div>
           </div>
 
@@ -128,7 +129,7 @@ import '../styles/v4-light.css';
             </div>
             <div class="card-title">Разнородность систем учета у&nbsp;брендов-резидентов</div>
             <div class="card-desc">
-              У&nbsp;каждого резидента свой уровень автоматизации: от&nbsp;собственных 1С/МойСклад до&nbsp;учета в&nbsp;Excel. Заставить всех синхронно провести интеграцию по&nbsp;API невозможно.
+              У&nbsp;каждого резидента свой уровень автоматизации: от&nbsp;собственных 1С/МойСклад до&nbsp;учета в&nbsp;Excel. Заставить десятки резидентов синхронно провести интеграцию по&nbsp;API в&nbsp;сжатые сроки физически невозможно.
             </div>
           </div>
 
@@ -136,9 +137,9 @@ import '../styles/v4-light.css';
             <div style="display: flex; justify-content: space-between; align-items: center;">
               <span class="badge-black">СПЕЦИФИКА 04</span>
             </div>
-            <div class="card-title">Риск неактуальных остатков (Oversell) и&nbsp;стандартов контента</div>
+            <div class="card-title">Риск неактуальных остатков (Oversell) и&nbsp;стандарта контента</div>
             <div class="card-desc">
-              При несинхронизированном ведении остатков возникают продажи отсутствующего товара и&nbsp;зоопарк любительских фото, разрушающих премиальный visual витрины.
+              При ручном или несинхронизированном ведении остатков возникает риск продажи отсутствующего товара, а&nbsp;также зоопарк разнородных любительских фотографий, разрушающих премиальный fashion-визуал витрины.
             </div>
           </div>
         </div>
@@ -150,36 +151,48 @@ import '../styles/v4-light.css';
       <div class="slide-content">
         <div class="fashion-pill">Слайд 04 / Архитектура Решения</div>
         <h1 class="title-editorial">Решение: Поэтапный запуск Lean MVP и&nbsp;платформа управления</h1>
-        <p class="subtitle-light">Трехуровневый контур оцифровки остатков, контроля витрины и&nbsp;фискализации выдачи</p>
+        <p class="subtitle-light">Трехуровневая архитектура решения на&nbsp;Фазе 1 (Lean MVP)</p>
 
         <div class="grid-3">
-          <div class="fashion-card-light" style="border-top: 3px solid #111111;">
-            <div style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--text-muted);">КОНТУР 01</div>
+          <div class="fashion-card-light" style="border-top: 2px solid #111111;">
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">КОНТУР 01</div>
             <div class="card-title">БРЕНДЫ = SOURCE OF TRUTH</div>
             <div class="card-desc">
-              Резиденты сами ведут каталог, цены и&nbsp;остатки через Личный Кабинет, Excel или YML-фиды. Заказ мгновенно летит в&nbsp;TG-бот бренд-менеджеру.
+              Операционный контур остатков: Резиденты сами ведут каталог, цены и&nbsp;остатки через Личный Кабинет, Excel или YML-фиды.
             </div>
           </div>
 
-          <div class="fashion-card-light" style="border-top: 3px solid #111111;">
-            <div style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--text-muted);">КОНТУР 02</div>
-            <div class="card-title">TREND ISLAND = CONTROL PLANE</div>
+          <div class="fashion-card-light" style="border-top: 2px solid #111111;">
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">КОНТУР 02</div>
+            <div class="card-title"><span class="nobr">TREND ISLAND</span> = CONTROL PLANE</div>
             <div class="card-desc">
-              Автоматическая нормализация фото под fashion-стандарт 3:4, замеры в&nbsp;см, модерация карточек и&nbsp;контроль SLA сборки резидентами.
+              Контур контроля: Авто-нормализация фото (3:4), замеры в&nbsp;см, модерация карточек, SLA сборки через Telegram-бот.
             </div>
           </div>
 
-          <div class="fashion-card-light" style="border-top: 3px solid #111111;">
-            <div style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--text-muted);">КОНТУР 03</div>
-            <div class="card-title">CLICK &amp; COLLECT &amp; 54-ФЗ</div>
+          <div class="fashion-card-light" style="border-top: 2px solid #111111;">
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">КОНТУР 03</div>
+            <div class="card-title"><span class="nobr">CLICK &amp; COLLECT</span> &amp; 54-ФЗ</div>
             <div class="card-desc">
-              Выдача в&nbsp;Авиапарке, 1 чек от&nbsp;юрлица TI при получении после примерки, сканирование «Честный ЗНАК» через АРМ и&nbsp;начисление бонусов.
+              Контур выдачи: Выдача в&nbsp;ТЦ «Авиапарк», 1 чек от&nbsp;<span class="nobr">Trend Island</span>, сканирование «Честный ЗНАК», начисление ПЛ.
             </div>
           </div>
         </div>
 
-        <div class="callout-box" style="margin-top: 0.5rem;">
-          ⚡ <strong>Безопасная оплата:</strong> Двухстадийный эквайринг (холдирование средств до&nbsp;выдачи) или бронь с&nbsp;гарантированной оплатой при получении на&nbsp;стойке после примерки.
+        <div class="grid-2" style="margin-top: 0.35rem;">
+          <div class="fashion-card-light" style="padding: 1.1rem;">
+            <div class="card-title" style="font-size: 0.95rem;">Личные кабинеты брендов (ЛК) &amp; Надзор</div>
+            <div class="card-desc" style="font-size: 0.85rem;">
+              Резиденты ведут ассортимент через простой веб-интерфейс, YML-фиды или Excel. Платформа автоматически нормализует фото под единый fashion-стандарт (Image Pipeline 3:4) и&nbsp;контролирует SLA сборки заказов через Telegram-бот.
+            </div>
+          </div>
+
+          <div class="fashion-card-light" style="padding: 1.1rem;">
+            <div class="card-title" style="font-size: 0.95rem;"><span class="nobr">Click &amp; Collect</span>, 54-ФЗ &amp; Оплата</div>
+            <div class="card-desc" style="font-size: 0.85rem;">
+              1 корзина из&nbsp;любых брендов с&nbsp;выдачей в&nbsp;Авиапарке. Чек фискализируется от&nbsp;юрлица <span class="nobr">Trend Island</span> с&nbsp;авто-выбытием из&nbsp;«Честного ЗНАКА». Двухстадийный эквайринг (холдирование средств) или бронь с&nbsp;оплатой после примерки.
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -188,39 +201,39 @@ import '../styles/v4-light.css';
     <section class="slide" data-slide="4">
       <div class="slide-content">
         <div class="fashion-pill">Слайд 05 / Бизнес-Ценность</div>
-        <h1 class="title-editorial">Что получает Trend Island</h1>
-        <p class="subtitle-light">Стратегические преимущества и&nbsp;прямые выгоды для бизнеса универмага</p>
+        <h1 class="title-editorial">Что получает <span class="nobr">Trend Island</span> (Бизнес-ценность)</h1>
+        <p class="subtitle-light">Стратегические преимущества и&nbsp;прямая финансовая отдача от&nbsp;внедрения платформы</p>
 
         <div class="grid-2">
           <div class="fashion-card-light">
             <div class="card-step-num">01</div>
-            <div class="card-title">Запуск Click &amp; Collect без роста оп-расходов</div>
+            <div class="card-title">Запуск онлайн-продаж <span class="nobr">Click &amp; Collect</span> без роста оп-расходов</div>
             <div class="card-desc">
-              Мгновенная монетизация 50&nbsp;000 посетителей сайта. Модель генерирует <strong>допродажи в&nbsp;зале (In-Store Cross-sell +30–40% к&nbsp;чеку)</strong> во&nbsp;время примерки.
+              Мгновенная монетизация 50&nbsp;000 посетителей сайта. Модель не&nbsp;каннибализирует оффлайн-продажи, а&nbsp;привлекает сомневающихся покупателей в&nbsp;Авиапарк и&nbsp;генерирует <strong>допродажи в&nbsp;зале (In-Store Cross-sell до +30–40% к&nbsp;чеку)</strong>.
             </div>
           </div>
 
           <div class="fashion-card-light">
             <div class="card-step-num">02</div>
-            <div class="card-title">Обогащение профилей клиентов &amp; CDP</div>
+            <div class="card-title">Обогащение профилей клиентов &amp; Фундамент для CDP</div>
             <div class="card-desc">
-              Оцифровка цифрового следа покупателей (история просмотров, любимые бренды, составы корзин) для персонализированных триггерных рассылок и&nbsp;роста LTV.
+              Оцифровка цифрового следа покупателей (история просмотров, любимые бренды, состав корзин). База для внедрения CDP/CRM и&nbsp;запуска персонализированных триггерных рассылок.
             </div>
           </div>
 
           <div class="fashion-card-light">
             <div class="card-step-num">03</div>
-            <div class="card-title">Прозрачность 54-ФЗ, маркировки и&nbsp;учета</div>
+            <div class="card-title">Прозрачность 54-ФЗ, маркировки и&nbsp;комиссионного учета</div>
             <div class="card-desc">
-              Единое кассовое ядро гарантирует 100% юридическую чистоту, автоматический вывод маркировки «Честный ЗНАК» через ОФД и&nbsp;прозрачные расчеты с&nbsp;резидентами.
+              Единое кассовое ядро гарантирует 100% юридическую чистоту, автоматический вывод маркировки «Честный ЗНАК» через ОФД и&nbsp;прозрачную отчетность перед брендами-резидентами.
             </div>
           </div>
 
           <div class="fashion-card-light">
             <div class="card-step-num">04</div>
-            <div class="card-title">Быстрая валидация гипотезы (5,46&nbsp;млн&nbsp;₽)</div>
+            <div class="card-title">Быстрая валидация гипотезы и&nbsp;прозрачные инвестиции</div>
             <div class="card-desc">
-              Вместо рискованных инвестиций в&nbsp;20–30&nbsp;млн&nbsp;₽ запуск полноценного торгового пилота за <strong>5,46&nbsp;млн рублей за&nbsp;5–6 месяцев</strong> за&nbsp;счет ИИ-технологий Vibe Coding.
+              Рыночный вызов: Полномасштабный <span class="nobr">e-commerce</span> с&nbsp;нуля требует 20–30&nbsp;млн&nbsp;₽ без гарантий окупаемости. Наше решение: Запуск полноценного пилота за <strong>5,46&nbsp;млн рублей за&nbsp;5–6 месяцев</strong> за&nbsp;счет ИИ-инструментов разработки (Vibe Coding) и&nbsp;глубокой отраслевой экспертизы.
             </div>
           </div>
         </div>
@@ -231,40 +244,40 @@ import '../styles/v4-light.css';
     <section class="slide" data-slide="5">
       <div class="slide-content">
         <div class="fashion-pill">Слайд 06 / Дорожная Карта</div>
-        <h1 class="title-editorial">Схема фаз и&nbsp;Дорожная карта развития</h1>
-        <p class="subtitle-light">Последовательный путь от&nbsp;пилота к&nbsp;омниканальной fashion-экосистеме</p>
+        <h1 class="title-editorial">Схема фаз и&nbsp;Дорожная карта развития платформы</h1>
+        <p class="subtitle-light">Пошаговое развитие от&nbsp;фокусного пилота к&nbsp;масштабной омниканальной экосистеме</p>
 
         <div class="grid-3">
-          <div class="fashion-card-light" style="border: 2px solid #111111;">
+          <div class="fashion-card-light" style="border: 1.5px solid #111111;">
             <span class="badge-black">ФАЗА 1: 5–6 МЕСЯЦЕВ</span>
-            <div class="card-title" style="font-size: 1.3rem; margin-top: 0.5rem;">Тестовый Пилот (Lean MVP)</div>
-            <div style="font-family: var(--font-title); font-size: 1.4rem; font-weight: 800; color: #111111;">5&nbsp;460&nbsp;000 ₽</div>
+            <div class="card-title" style="font-size: 1.25rem; margin-top: 0.5rem;">Тестовый Пилот (Lean MVP)</div>
+            <div style="font-family: var(--font-title); font-size: 1.35rem; font-weight: 500; color: #111111;">5&nbsp;460&nbsp;000 ₽</div>
             <ul style="margin-left: 1.2rem; font-size: 0.88rem; color: var(--text-body); line-height: 1.6;">
               <li>Nuxt 3 Витрина &amp; ЛК Брендов</li>
-              <li>АРМ Стойки &amp; Click &amp; Collect</li>
-              <li>Первая онлайн-выручка в&nbsp;Авиапарке</li>
+              <li>АРМ Стойки &amp; <span class="nobr">Click &amp; Collect</span></li>
+              <li>Первая онлайн-выручка (5.46 млн ₽)</li>
             </ul>
           </div>
 
           <div class="fashion-card-light">
             <span class="fashion-pill" style="margin-bottom: 0.2rem;">ФАЗА 2: 3.5–4.5 МЕС</span>
-            <div class="card-title" style="font-size: 1.3rem;">Масштабирование &amp; LTV</div>
-            <div style="font-family: var(--font-title); font-size: 1.4rem; font-weight: 800; color: var(--text-muted);">1.44 – 3.54 млн ₽</div>
+            <div class="card-title" style="font-size: 1.25rem;">Масштабирование &amp; LTV</div>
+            <div style="font-family: var(--font-title); font-size: 1.35rem; font-weight: 500; color: var(--text-muted);">1.44 – 3.54 млн ₽</div>
             <ul style="margin-left: 1.2rem; font-size: 0.88rem; color: var(--text-body); line-height: 1.6;">
               <li>Автоматизация 1С &amp; Программы Лояльности</li>
               <li>Товарные рекомендации &amp; UGC</li>
-              <li>Shoppable Лукбуки &amp; SEO-генератор</li>
+              <li>Shoppable Лукбуки &amp; SEO-автогенератор</li>
             </ul>
           </div>
 
           <div class="fashion-card-light">
             <span class="fashion-pill" style="margin-bottom: 0.2rem;">ФАЗА 3: 4–5 МЕСЯЦЕВ</span>
-            <div class="card-title" style="font-size: 1.3rem;">Экосистема &amp; Экспансия</div>
-            <div style="font-family: var(--font-title); font-size: 1.4rem; font-weight: 800; color: var(--text-muted);">2.43 – 3.60 млн ₽</div>
+            <div class="card-title" style="font-size: 1.25rem;">Экосистема &amp; Экспансия</div>
+            <div style="font-family: var(--font-title); font-size: 1.35rem; font-weight: 500; color: var(--text-muted);">2.43 – 3.60 млн ₽</div>
             <ul style="margin-left: 1.2rem; font-size: 0.88rem; color: var(--text-body); line-height: 1.6;">
               <li>Flutter App iOS / Android</li>
-              <li>ИИ-поиск по&nbsp;масштабируемому каталогу</li>
-              <li>Экспресс-доставка Курьерами 2–4ч</li>
+              <li>ИИ-поиск / Elasticsearch</li>
+              <li>Экспресс-доставка Курьерами</li>
             </ul>
           </div>
         </div>
@@ -274,49 +287,52 @@ import '../styles/v4-light.css';
     <!-- SLIDE 7: Detailed Scope & Budget -->
     <section class="slide" data-slide="6">
       <div class="slide-content">
-        <div class="fashion-pill">Слайд 07 / Смета и&nbsp;Детали</div>
+        <div class="fashion-pill">Слайд 07 / Смета и&nbsp;Наполнение</div>
         <h1 class="title-editorial">Сроки, детализация фаз и&nbsp;инвестиции</h1>
-        <p class="subtitle-light">Детальный функциональный состав каждого этапа реализации</p>
+        <p class="subtitle-light">Детальный функциональный состав всех этапов развития платформы</p>
 
         <div class="grid-3">
           <div class="fashion-card-light">
-            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); font-family: var(--font-mono);">ФАЗА 1 (ПИЛОТ ПОД КЛЮЧ)</div>
-            <div class="card-title">5&nbsp;460&nbsp;000 ₽</div>
-            <div style="font-size: 0.85rem; color: var(--text-body); line-height: 1.5;">
-              • Витрина Nuxt 3 (фильтры, поиск, PDP)<br/>
-              • ЛК брендов + Telegram-бот сборки<br/>
-              • АРМ стойки выдачи (54-ФЗ, ЧЗ)<br/>
-              • SMS/Email/Yandex ID авторизация<br/>
-              • AI-инфраструктура на&nbsp;6 месяцев
+            <div style="font-size: 0.78rem; font-weight: 500; color: var(--text-muted); font-family: var(--font-mono);">ФАЗА 1: ТЕСТОВЫЙ ПИЛОТ (5–6 МЕС)</div>
+            <div class="card-title">5&nbsp;460&nbsp;000 ₽ <span style="font-size: 0.75rem; font-weight: 400; color: var(--text-muted);">(под ключ)</span></div>
+            <div style="font-size: 0.84rem; color: var(--text-body); line-height: 1.55;">
+              • <strong>Премиальный Fashion-сайт на Nuxt 3 (Vue 3):</strong> листинги, быстрый поиск PostgreSQL FTS, фильтры, карточки товаров (PDP), ЛК покупателя, корзина, мобильный чекаут, персональная страница бренда.<br/>
+              • <strong>Пилот на 3–4 ключевых брендах:</strong> обкатка сборки.<br/>
+              • <strong>ЛК брендов + Telegram-бот:</strong> каталог, остатки, цены.<br/>
+              • <strong>Уведомления покупателей:</strong> SMS/Email статусы.<br/>
+              • <strong>АРМ стойки в Авиапарке:</strong> 54-ФЗ, Честный ЗНАК.<br/>
+              • <strong>Сценарии оплаты:</strong> холдирование / бронь.<br/>
+              • <strong>OTP-авторизация:</strong> SMS, Flash-Call, Yandex ID.
             </div>
           </div>
 
           <div class="fashion-card-light">
-            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); font-family: var(--font-mono);">ФАЗА 2 (АВТОМАТИЗАЦИЯ)</div>
-            <div class="card-title">1.44 – 3.54 млн ₽</div>
-            <div style="font-size: 0.85rem; color: var(--text-body); line-height: 1.5;">
-              • Асинхронный учет 1С<br/>
-              • Списание бонусов ПЛ на&nbsp;чекауте<br/>
-              • Retail Rocket рекомендации<br/>
-              • Shoppable Лукбуки с&nbsp;тегами<br/>
-              • SEO-автогенератор категорий
+            <div style="font-size: 0.78rem; font-weight: 500; color: var(--text-muted); font-family: var(--font-mono);">ФАЗА 2: МАСШТАБИРОВАНИЕ (3.5–4.5 МЕС)</div>
+            <div class="card-title">1&nbsp;440&nbsp;000 – 3&nbsp;540&nbsp;000 ₽</div>
+            <div style="font-size: 0.84rem; color: var(--text-body); line-height: 1.55;">
+              • <strong>Интеграция с учетной системой 1С:</strong> выгрузка чеков и комиссии.<br/>
+              • <strong>Программа Лояльности на чекауте:</strong> бонусы в корзине.<br/>
+              • <strong>Товарные рекомендации:</strong> Retail Rocket / Mindbox.<br/>
+              • <strong>Отзывы и UGC:</strong> фото и оценки покупателей.<br/>
+              • <strong>Shoppable Лукбуки:</strong> подборки от стилистов с тегами.<br/>
+              • <strong>SEO-автогенератор:</strong> индексируемые страницы категорий.<br/>
+              • <strong>Каскадный SLA &amp; Авто-рейтинг брендов.</strong>
             </div>
           </div>
 
           <div class="fashion-card-light">
-            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); font-family: var(--font-mono);">ФАЗА 3 (МОБИЛЬНАЯ ЭКОСИСТЕМА)</div>
-            <div class="card-title">2.43 – 3.60 млн ₽</div>
-            <div style="font-size: 0.85rem; color: var(--text-body); line-height: 1.5;">
-              • Flutter Приложение iOS/Android<br/>
-              • Гео-пуши при входе в&nbsp;Авиапарк<br/>
-              • ИИ-поиск Elasticsearch<br/>
-              • Доставка Ship-from-Store за&nbsp;2–4ч
+            <div style="font-size: 0.78rem; font-weight: 500; color: var(--text-muted); font-family: var(--font-mono);">ФАЗА 3: ЭКОСИСТЕМА (4–5 МЕС)</div>
+            <div class="card-title">2&nbsp;430&nbsp;000 – 3&nbsp;600&nbsp;000 ₽</div>
+            <div style="font-size: 0.84rem; color: var(--text-body); line-height: 1.55;">
+              • <strong>Мобильное Приложение Flutter (iOS/Android):</strong> 60–120 fps UX, пуш-уведомления, гео-пуши при входе в ТЦ «Авиапарк», QR-карта вызова заказа.<br/>
+              • <strong>Умный поиск (Elasticsearch / OpenSearch):</strong> семантический ИИ-поиск по масштабному каталогу.<br/>
+              • <strong>Экспресс-доставка Курьерами (Ship-from-Store):</strong> доставка курьерами (Яндекс Доставка / СДЭК) за 2–4 часа по Москве.
             </div>
           </div>
         </div>
 
         <div class="callout-box">
-          ℹ️ <strong>Примечание:</strong> Разброс смет Фаз 2 и&nbsp;3 уточняется на&nbsp;предпроектном обследовании архитектуры 1С и&nbsp;Программы Лояльности.
+          ℹ️ <strong>Примечание по оценкам Фаз 2 и 3:</strong> Разброс оценок бюджетов и трудозатрат на Фазах 2 и 3 связан с тем, что для уточнения сметы требуется проведение этапа предпроектного обследования — детальное изучение внутренних бизнес-процессов Заказчика, архитектуры учетной системы 1С и механик действующей Программы Лояльности.
         </div>
       </div>
     </section>
@@ -325,29 +341,29 @@ import '../styles/v4-light.css';
     <section class="slide" data-slide="7">
       <div class="slide-content">
         <div class="fashion-pill">Слайд 08 / Команда и&nbsp;ИИ</div>
-        <h1 class="title-editorial">Команда проекта &amp; AI-технологический стек</h1>
-        <p class="subtitle-light">Высокоскоростная разработка Vibe Coding с&nbsp;использованием ИИ-агентов и&nbsp;LLM</p>
+        <h1 class="title-editorial">Команда проекта &amp; AI-технологический стек (Vibe Coding)</h1>
+        <p class="subtitle-light">Компактная экспертная группа и&nbsp;современный AI-конвейер разработки</p>
 
         <div class="grid-2">
           <div class="fashion-card-light">
             <span class="badge-black">КОМПАКТНАЯ ЭКСПЕРТНАЯ ГРУППА</span>
-            <div style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem;">
-              <div><strong>Кадацкий Илья (E-Com эксперт / PM / BA):</strong> Управление продуктом, системная аналитика и&nbsp;контроллинг.</div>
-              <div><strong>Lead Fashion UX/UI Дизайнер:</strong> Проектирование премиального визуала в&nbsp;Figma и&nbsp;UI-Kit.</div>
-              <div><strong>Senior Fullstack Инженеры (Вайбкодеры):</strong> Разработка Nuxt 3 + Laravel в&nbsp;связке с&nbsp;AI-инструментами.</div>
-              <div><strong>QA &amp; DevOps Инженер:</strong> CI/CD, Yandex Cloud, SmartCaptcha и&nbsp;авто-тесты.</div>
+            <div style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem; line-height: 1.5;">
+              <div><strong>Кадацкий Илья (E-Commerce эксперт / PM / BA):</strong> Руководство продуктом, системная аналитика, управление сроками, контроль качества и операционная синхронизация с <span class="nobr">Trend Island</span>.</div>
+              <div><strong>Lead Fashion UX/UI Дизайнер:</strong> Проектирование премиального внешнего вида витрины в Figma, UI-Kit, fashion-анимаций и мобильного UX.</div>
+              <div><strong>Senior Fullstack Инженеры (Вайбкодеры):</strong> Опытные разработчики (Nuxt 3 + Laravel/PostgreSQL), работающие в прямой связке с ИИ-инструментами.</div>
+              <div><strong>QA &amp; DevOps Инженер:</strong> Комплексное тестирование, CI/CD, серверный контур и безопасность РФ (Yandex Cloud, SmartCaptcha, DDOS-Guard).</div>
             </div>
           </div>
 
           <div class="fashion-card-light">
-            <span class="badge-black">AI-КОНВЕЙЕР (VIBE CODING STACK)</span>
-            <div style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem;">
-              <div><strong>AI IDE &amp; Среды:</strong> Google Antigravity (AGY) &amp; Cursor AI IDE</div>
-              <div><strong>LLM-Движки:</strong> Anthropic Claude 3.5 Sonnet, Google Gemini Pro, OpenAI GPT-4o</div>
-              <div><strong>Автоматизация:</strong> Авто-генерация тестов, нормализация YML/Excel фидов и&nbsp;Image Pipeline 3:4.</div>
+            <span class="badge-black">AI-КОНВЕЙЕР И СРЕДЫ РАЗРАБОТКИ (VIBE CODING)</span>
+            <div style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem; line-height: 1.5;">
+              <div><strong>AI IDE &amp; Среды разработки:</strong> Google Antigravity (AGY) &amp; Cursor AI IDE</div>
+              <div><strong>Флагманские нейросетевые LLM-движки:</strong> Anthropic Claude 3.5 Sonnet, Google Gemini Pro, OpenAI GPT-4o</div>
+              <div><strong>ИИ-агенты и автоматизация:</strong> Авто-генерация интеграционных тестов, авто-документирование API, ускоренная нормализация YML/Excel-фидов и фото-контента (Image Pipeline 3:4).</div>
             </div>
             <div class="callout-box" style="margin-top: 0.5rem; font-size: 0.8rem;">
-              ⚡ Сокращение сроков разработки на&nbsp;30% и&nbsp;отсутствие расходов на&nbsp;лишних посредников.
+              ⚡ Разработка ведется с использованием современного AI-конвейера, что сокращает сроки производства на <strong>30%</strong> и исключает расходы на раздутый штат посредников.
             </div>
           </div>
         </div>
@@ -358,8 +374,10 @@ import '../styles/v4-light.css';
     <section class="slide" data-slide="8">
       <div class="slide-content">
         <div class="fashion-pill">Слайд 09 / Финансовая Модель</div>
-        <h1 class="title-editorial">Юнит-экономика и&nbsp;финансовый потенциал</h1>
-        <p class="subtitle-light">Консервативный расчет: трафик 45–50k/мес | AOV ~8&nbsp;500&nbsp;₽ | Выкуп на&nbsp;стойке ~75–80%</p>
+        <h1 class="title-editorial">Юнит-экономика и&nbsp;финансовый потенциал (Консервативный расчет)</h1>
+        <p class="subtitle-light">
+          Исходный трафик сайта (SimilarWeb): 45&nbsp;000 – 50&nbsp;000 визитов/мес | Текущая онлайн-выручка: 0&nbsp;₽ | Бенчмарки Fashion <span class="nobr">Click &amp; Collect</span>: AOV ~8&nbsp;500&nbsp;₽, Выкуп на&nbsp;стойке ~75–80%
+        </p>
 
         <!-- Desktop Table -->
         <div class="table-wrapper desktop-only">
@@ -372,36 +390,36 @@ import '../styles/v4-light.css';
                 <th>Чеков в&nbsp;мес</th>
                 <th>Средний чек</th>
                 <th>Выручка в&nbsp;месяц</th>
-                <th>Окупаемость</th>
+                <th>Окупаемость инвестиций</th>
               </tr>
             </thead>
             <tbody>
               <tr class="highlight-row">
                 <td><strong>ФАЗА 1: Lean MVP</strong> <span>(1–6 мес)</span></td>
                 <td>50&nbsp;000 – 60&nbsp;000</td>
-                <td>0.6% – 0.8%</td>
+                <td>0.6% – 0.8% <span style="font-size: 0.75rem; color: var(--text-muted);">(3–4 бренда)</span></td>
                 <td>225 – 384</td>
                 <td>8&nbsp;500 ₽</td>
-                <td style="font-family: var(--font-title); font-weight: 800; font-size: 1rem;">1.9 – 3.26 млн ₽</td>
-                <td><span class="badge-black">Окупаемость за&nbsp;4–6 мес!</span></td>
+                <td style="font-family: var(--font-title); font-weight: 500; font-size: 1rem;">1.9 – 3.26 млн ₽ / мес<br/><span style="font-size: 0.78rem; color: var(--text-muted);">(~11.5–19.5 млн ₽ за 6 мес)</span></td>
+                <td><span class="badge-black">Полная окупаемость пилота (5.46 млн ₽) за 4–6 месяцев!</span></td>
               </tr>
               <tr>
                 <td><strong>ФАЗА 2: Масштабирование</strong> <span>(6–9 мес)</span></td>
-                <td>85&nbsp;000 – 110&nbsp;000</td>
-                <td>1.4% – 1.6%</td>
+                <td>85&nbsp;000 – 110&nbsp;000 <span style="font-size: 0.75rem; color: var(--text-muted);">(SEO + Рассылки)</span></td>
+                <td>1.4% – 1.6% <span style="font-size: 0.75rem; color: var(--text-muted);">(Retail Rocket)</span></td>
                 <td>975 – 1&nbsp;408</td>
                 <td>9&nbsp;000 ₽</td>
-                <td style="font-family: var(--font-title); font-weight: 800; font-size: 1rem;">8.7 – 12.6 млн ₽</td>
-                <td>Рост LTV и&nbsp;маржи</td>
+                <td style="font-family: var(--font-title); font-weight: 500; font-size: 1rem;">8.7 – 12.6 млн ₽ / мес</td>
+                <td>Стабильный рост LTV и маржинальности</td>
               </tr>
               <tr>
                 <td><strong>ФАЗА 3: Экосистема</strong> <span>(10–14 мес)</span></td>
-                <td>150&nbsp;000 – 200&nbsp;000</td>
-                <td>2.2% – 2.6%</td>
+                <td>150&nbsp;000 – 200&nbsp;000 <span style="font-size: 0.75rem; color: var(--text-muted);">(Веб + App MAU)</span></td>
+                <td>2.2% – 2.6% <span style="font-size: 0.75rem; color: var(--text-muted);">(App CR ~3.5%)</span></td>
                 <td>2&nbsp;805 – 4&nbsp;420</td>
                 <td>9&nbsp;500 ₽</td>
-                <td style="font-family: var(--font-title); font-weight: 800; font-size: 1rem;">26.6 – 41.9 млн ₽</td>
-                <td>Лидерство на&nbsp;рынке</td>
+                <td style="font-family: var(--font-title); font-weight: 500; font-size: 1rem;">26.6 – 41.9 млн ₽ / мес</td>
+                <td>Масштабирование в лидирующую онлайн-платформу</td>
               </tr>
             </tbody>
           </table>
@@ -409,31 +427,31 @@ import '../styles/v4-light.css';
 
         <!-- Mobile Economics View -->
         <div class="mobile-only" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 0.5rem;">
-          <div class="fashion-card-light" style="border: 2px solid #111111;">
+          <div class="fashion-card-light" style="border: 1.5px solid #111111;">
             <span class="badge-black">ФАЗА 1: LEAN MVP</span>
-            <div style="font-family: var(--font-title); font-size: 1.4rem; font-weight: 800; margin-top: 0.3rem;">1.9 – 3.26 млн ₽ / мес</div>
-            <div style="font-size: 0.85rem; color: var(--text-body);">
-              • Трафик: 50-60k | CR: 0.6%-0.8%<br/>
-              • Чеков: 225-384 | AOV: 8&nbsp;500&nbsp;₽
+            <div style="font-family: var(--font-title); font-size: 1.35rem; font-weight: 500; margin-top: 0.3rem;">1.9 – 3.26 млн ₽ / мес</div>
+            <div style="font-size: 0.85rem; color: var(--text-body); line-height: 1.5;">
+              • Трафик: 50–60k | CR: 0.6%–0.8% (3–4 бренда)<br/>
+              • Чеков: 225–384 | AOV: 8&nbsp;500&nbsp;₽
             </div>
-            <div style="font-weight: 700; color: #111111; font-size: 0.82rem; margin-top: 0.4rem;">
-              ⚡ Окупаемость инвестиций (5.46M&nbsp;₽) за&nbsp;4–6 месяцев!
+            <div style="font-weight: 500; color: #111111; font-size: 0.82rem; margin-top: 0.4rem;">
+              ⚡ Полная окупаемость пилота (5.46 млн ₽) за 4–6 месяцев!
             </div>
           </div>
 
           <div class="fashion-card-light">
             <span class="fashion-pill">ФАЗА 2: МАСШТАБИРОВАНИЕ</span>
-            <div style="font-family: var(--font-title); font-size: 1.3rem; font-weight: 800;">8.7 – 12.6 млн ₽ / мес</div>
+            <div style="font-family: var(--font-title); font-size: 1.3rem; font-weight: 500;">8.7 – 12.6 млн ₽ / мес</div>
           </div>
 
           <div class="fashion-card-light">
             <span class="fashion-pill">ФАЗА 3: ЭКОСИСТЕМА</span>
-            <div style="font-family: var(--font-title); font-size: 1.3rem; font-weight: 800;">26.6 – 41.9 млн ₽ / мес</div>
+            <div style="font-family: var(--font-title); font-size: 1.3rem; font-weight: 500;">26.6 – 41.9 млн ₽ / мес</div>
           </div>
         </div>
 
         <div class="callout-box" style="margin-top: 0.5rem;">
-          ⚠️ <strong>Примечание:</strong> Расчеты базы финансовой модели предполагают соблюдение SLA по&nbsp;сборке товаров брендами и&nbsp;маркетинговую поддержку.
+          ⚠️ <strong>Важное примечание:</strong> Приведенные показатели юнит-экономики и сроки окупаемости являются расчетной финансовой моделью и достижимы ТОЛЬКО при условии полного соблюдения Дорожной карты проекта: выполнении брендами-резидентами регламента SLA по сборке товаров, обеспечении маркетинговой поддержки со стороны универмага и полнообъемной реализации всех запланированных модулей платформы.
         </div>
       </div>
     </section>
@@ -462,6 +480,7 @@ import '../styles/v4-light.css';
     const btnPrev = document.getElementById('btnPrev');
     const btnNext = document.getElementById('btnNext');
     const btnFullscreen = document.getElementById('btnFullscreen');
+    const btnExplore = document.getElementById('btnExplore');
     const tabBtns = document.querySelectorAll('.tab-btn');
 
     function goToSlide(index) {
@@ -486,6 +505,7 @@ import '../styles/v4-light.css';
       }
     }
 
+    btnExplore?.addEventListener('click', () => goToSlide(1));
     btnPrev?.addEventListener('click', () => goToSlide(currentSlide - 1));
     btnNext?.addEventListener('click', () => goToSlide(currentSlide + 1));
 

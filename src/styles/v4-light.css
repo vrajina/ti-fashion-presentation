@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..900;1,6..12,300..900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..900;1,6..12,300..900&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   --bg-light: #fafaf9;
@@ -34,6 +34,10 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+.nobr {
+  white-space: nowrap !important;
+}
+
 /* Deck Layout */
 .deck-container {
   position: relative;
@@ -47,11 +51,11 @@ html, body {
 .slide {
   display: none;
   width: 100%;
-  height: calc(100vh - 120px);
-  padding: 2.25rem 4.5rem;
+  height: calc(100vh - 115px);
+  padding: 2rem 4.5rem;
   overflow-y: auto;
   opacity: 0;
-  transform: translateY(6px);
+  transform: translateY(4px);
   transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
@@ -62,35 +66,36 @@ html, body {
 }
 
 .slide-content {
-  max-width: 1240px;
+  max-width: 1260px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.2rem;
 }
 
-/* Typography */
+/* Typography - Unbolded Sleek Editorial Style */
 h1, h2, h3, h4 {
   font-family: var(--font-title);
   color: var(--text-main);
-  letter-spacing: -0.02em;
+  font-weight: 500;
+  letter-spacing: -0.015em;
 }
 
 .title-editorial {
   font-family: var(--font-title);
-  font-weight: 800;
-  font-size: clamp(1.8rem, 3.8vw, 2.75rem);
-  line-height: 1.1;
+  font-weight: 500;
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.15;
   color: var(--text-main);
   text-transform: uppercase;
 }
 
 .subtitle-light {
   font-family: var(--font-body);
-  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-size: clamp(0.98rem, 1.3vw, 1.12rem);
   color: var(--text-muted);
   line-height: 1.55;
-  max-width: 900px;
+  max-width: 950px;
   font-weight: 400;
 }
 
@@ -99,13 +104,13 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.35rem 0.85rem;
+  padding: 0.3rem 0.8rem;
   background: var(--accent-pill);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-main);
   font-family: var(--font-mono);
@@ -117,68 +122,67 @@ h1, h2, h3, h4 {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 1.75rem;
+  padding: 1.5rem;
   transition: all 0.25s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.6rem;
 }
 
 .fashion-card-light:hover {
   border-color: var(--text-main);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
 }
 
 .card-step-num {
   font-family: var(--font-title);
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #d4d4d4;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #a0a0a0;
   line-height: 1;
 }
 
 .card-title {
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: var(--text-main);
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 .card-desc {
   font-size: 0.92rem;
   color: var(--text-body);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 /* Grids */
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 1.5rem;
-  margin-top: 0.5rem;
+  gap: 1.25rem;
+  margin-top: 0.35rem;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 0.5rem;
+  gap: 1.25rem;
+  margin-top: 0.35rem;
 }
 
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
-  margin-top: 0.5rem;
+  gap: 1.1rem;
+  margin-top: 0.35rem;
 }
 
 /* Light Table */
 .fashion-table-light {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   font-size: 0.9rem;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -190,17 +194,17 @@ h1, h2, h3, h4 {
   background: var(--bg-card-alt);
   color: var(--text-main);
   font-family: var(--font-title);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding: 1rem;
+  padding: 0.9rem 1rem;
   text-align: left;
   border-bottom: 1px solid var(--border-color);
 }
 
 .fashion-table-light td {
-  padding: 1.1rem 1rem;
+  padding: 1rem;
   border-bottom: 1px solid var(--border-color);
   color: var(--text-body);
   vertical-align: middle;
@@ -212,29 +216,54 @@ h1, h2, h3, h4 {
 
 .fashion-table-light tr.highlight-row {
   background: rgba(17, 17, 17, 0.03);
-  font-weight: 600;
 }
 
 .badge-black {
   background: var(--text-main);
   color: #ffffff;
-  padding: 0.3rem 0.65rem;
+  padding: 0.28rem 0.65rem;
   border-radius: 4px;
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05em;
   display: inline-block;
+  font-family: var(--font-mono);
 }
 
 /* Disclaimer Callout */
 .callout-box {
   background: var(--bg-card-alt);
   border-left: 3px solid var(--text-main);
-  padding: 1.1rem 1.4rem;
+  padding: 1rem 1.25rem;
   border-radius: 0 6px 6px 0;
   font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.5;
+}
+
+/* CTA Button */
+.cta-explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: none;
+  width: fit-content;
+}
+
+.cta-explore-btn:hover {
+  background: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .desktop-only { display: block; }
@@ -255,7 +284,7 @@ h1, h2, h3, h4 {
 @media (max-width: 900px) {
   .slide {
     padding: 1.5rem 1.25rem;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 125px);
   }
   .desktop-only { display: none; }
   .mobile-only { display: flex; }

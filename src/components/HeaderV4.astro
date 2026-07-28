@@ -11,8 +11,10 @@ const { totalSlides = 10, currentVersion = "v4" } = Astro.props;
 
 <header class="header-v4">
   <div class="brand-group">
-    <a href="/" title="Trend Island Presentation">
-      <TILogoOfficial height={22} color="#111111" />
+    <a href="/" title="Trend Island Presentation" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+      <span style="font-family: var(--font-title); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.12em;" class="nobr">TREND ISLAND</span>
+      <span style="color: var(--text-light); font-size: 0.8rem;">x</span>
+      <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);" class="nobr">E-COMMERCE</span>
     </a>
     <div class="version-toggle">
       <a href="/" class={`ver-btn ${currentVersion === 'v4' ? 'active' : ''}`}>v4 Light</a>
@@ -29,13 +31,13 @@ const { totalSlides = 10, currentVersion = "v4" } = Astro.props;
 
     <div class="nav-buttons">
       <button id="btnPrev" class="icon-btn" title="Предыдущий слайд (←)">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
       </button>
       <button id="btnNext" class="icon-btn" title="Следующий слайд (→)">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
       </button>
       <button id="btnFullscreen" class="icon-btn" title="На весь экран">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
       </button>
     </div>
   </div>
@@ -76,7 +78,7 @@ const { totalSlides = 10, currentVersion = "v4" } = Astro.props;
   .ver-btn {
     text-decoration: none;
     font-size: 0.72rem;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--text-muted);
     padding: 4px 10px;
     border-radius: 4px;
@@ -99,7 +101,7 @@ const { totalSlides = 10, currentVersion = "v4" } = Astro.props;
   .slide-indicator {
     font-family: var(--font-mono);
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--text-main);
     display: flex;
     align-items: center;
