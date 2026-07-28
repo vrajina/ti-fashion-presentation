@@ -466,13 +466,16 @@ h1, h2, h3, h4 {
   border-left: 4px solid var(--text-main);
   padding: 1.15rem 1.35rem;
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   color: var(--text-body);
   line-height: 1.55;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+  /* block — not flex column: inline <strong> must stay in one paragraph */
+  display: block;
   box-shadow: var(--shadow-soft);
+}
+
+.callout-box > * + * {
+  margin-top: 0.55rem;
 }
 
 .callout-box strong {
@@ -480,16 +483,56 @@ h1, h2, h3, h4 {
   font-weight: 650;
 }
 
+.callout-box p {
+  margin: 0;
+  display: inline;
+}
+
 .callout-box ul {
   margin-left: 1.15rem;
-  margin-top: 0.25rem;
-  line-height: 1.5;
-  font-size: 0.86rem;
+  margin-top: 0.45rem;
+  line-height: 1.55;
+  font-size: 0.9rem;
   color: var(--text-body);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
 .callout-box ul li::marker {
   color: var(--text-main);
+}
+
+/* Decision ask highlight */
+.decision-ask {
+  background: #ffffff;
+  border: 1.5px solid var(--text-main);
+  border-left: 4px solid var(--text-main);
+  border-radius: var(--radius-md);
+  padding: 1.15rem 1.35rem;
+  box-shadow: var(--shadow-card);
+}
+
+.decision-ask-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-metal);
+  margin-bottom: 0.45rem;
+}
+
+.decision-ask-text {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.decision-ask-text strong {
+  font-weight: 700;
 }
 
 /* ─── Lists ─── */
