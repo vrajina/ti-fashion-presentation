@@ -195,24 +195,24 @@ import '../styles/v7-light.css';
           <div class="arch-node">
             <div class="arch-node-num">Уровень 1</div>
             <div class="arch-node-title">Бренды = Источник данных</div>
-            <div class="arch-node-desc">Резиденты сами ведут свой каталог и&nbsp;остатки через Личные кабинеты (или Excel). Они мотивированы, так как это их продажи.</div>
+            <div class="arch-node-desc">Резиденты ведут каталог и&nbsp;остатки через ЛК и&nbsp;Telegram-бот (в&nbsp;т.ч. списание офлайн-продаж). 1С TI остатки брендов не&nbsp;хранит.</div>
           </div>
           <div class="arch-arrow" aria-hidden="true">→</div>
           <div class="arch-node">
             <div class="arch-node-num">Уровень 2</div>
             <div class="arch-node-title">Trend Island = Контроль</div>
-            <div class="arch-node-desc">Платформа автоматически нормализует фото, контролирует стандарты витрины и&nbsp;отслеживает время сборки (SLA).</div>
+            <div class="arch-node-desc">Платформа нормализует фото, модерирует витрину, следит за&nbsp;SLA сборки и&nbsp;координирует выдачу Click&nbsp;&amp;&nbsp;Collect.</div>
           </div>
           <div class="arch-arrow" aria-hidden="true">→</div>
           <div class="arch-node">
             <div class="arch-node-num">Уровень 3</div>
             <div class="arch-node-title">Монетизация = Комиссия</div>
-            <div class="arch-node-desc">TI получает % комиссии с&nbsp;успешных онлайн-бронирований, выкупленных на&nbsp;стойке. Без инвестиций в&nbsp;сотни метров новых складов.</div>
+            <div class="arch-node-desc">Клиент бронирует онлайн, примеряет и&nbsp;оплачивает на&nbsp;кассе TI. TI получает % с&nbsp;выкупа без своего склада.</div>
           </div>
         </div>
 
         <div class="callout-box" style="margin-top: 1rem;">
-          <strong>Итог архитектуры:</strong> TI зарабатывает как платформенный маркетплейс, контролируя клиентский опыт (выдача, 54-ФЗ, чеки), но не несет операционных издержек на&nbsp;логистику и&nbsp;хранение внутри ТЦ.
+          <strong>Итог архитектуры:</strong> TI контролирует клиентский опыт C&amp;C (витрина, бронь, выдача). Фискализация и&nbsp;«Честный&nbsp;ЗНАК» остаются на&nbsp;физической кассе&nbsp;/ ERP TI — без облачной кассы в&nbsp;MVP.
         </div>
       </div>
     </section>
@@ -228,11 +228,11 @@ import '../styles/v7-light.css';
           <div class="fashion-card-light fashion-card-featured">
             <div class="card-meta">Входит в MVP-пилот</div>
             <ul class="clean-list">
-              <li><strong>Fashion-витрина (Frontend):</strong> Премиальный UI, адаптив, листинги, поиск, карточка товара, чекаут.</li>
+              <li><strong>Fashion-витрина (Frontend):</strong> Премиальный UI, адаптив, листинги, поиск, карточка товара, корзина и&nbsp;чекаут.</li>
               <li><strong>Личные кабинеты брендов:</strong> Загрузка YML/Excel, авто-обрезка фото, управление остатками.</li>
-              <li><strong>АРМ Стойки TI:</strong> Веб-интерфейс администратора, интеграция с&nbsp;ERP для Честного ЗНАКа.</li>
-              <li><strong>Оформление и 54-ФЗ:</strong> Бронь через OTP (СМС/звонок), онлайн-оплата (чеки 54-ФЗ) и&nbsp;интеграция с&nbsp;физической кассой.</li>
-              <li><strong>Telegram-бот брендов:</strong> Алерты о сборке заказов и быстрое списание офлайн-продаж.</li>
+              <li><strong>АРМ Стойки TI:</strong> Статусы заказа, приёмка от&nbsp;бренда, координация выдачи; шлюз статусов с&nbsp;ERP.</li>
+              <li><strong>Оформление заказа:</strong> Бронь через OTP (СМС/звонок), только оплата при&nbsp;получении после примерки на&nbsp;кассе TI.</li>
+              <li><strong>Telegram-бот брендов:</strong> Алерты о&nbsp;сборке заказов и&nbsp;быстрое списание офлайн-продаж (сток вне 1С TI).</li>
             </ul>
           </div>
           <div class="fashion-card-light">
@@ -241,13 +241,14 @@ import '../styles/v7-light.css';
               Эти элементы сознательно отложены на&nbsp;Фазы 2–3 для защиты бюджета и&nbsp;ускорения тайм-ту-маркет:
             </div>
             <ul class="clean-list" style="margin-bottom: 1rem;">
-              <li>Полная интеграция с&nbsp;1С всех брендов (слишком долго).</li>
+              <li>Онлайн-оплата и&nbsp;облачная фискализация (54-ФЗ) — переносятся в&nbsp;Фазу 2.</li>
+              <li>Полная интеграция остатков брендов с&nbsp;1С (в&nbsp;1С TI остатков нет).</li>
               <li>Автоматическая Программа Лояльности.</li>
               <li>Мобильное приложение и&nbsp;курьерская доставка.</li>
             </ul>
             <div class="card-meta" style="margin-top: auto; color: var(--accent-metal);">Оборудование TI</div>
             <div class="card-desc" style="font-size: 0.85rem;">
-              Оборудование дополнительных зон выдачи (планшеты, сканеры штрих-кодов и&nbsp;банковские терминалы) закупается Trend Island самостоятельно.
+              Зоны выдачи и&nbsp;оплата — на&nbsp;существующем кассовом контуре TI (терминалы, сканеры ЧЗ в&nbsp;ERP). Доп. планшеты/стойки — при&nbsp;необходимости за&nbsp;счёт TI.
             </div>
           </div>
         </div>
@@ -501,14 +502,14 @@ import '../styles/v7-light.css';
             <div class="step-item" style="display: flex; justify-content: space-between; align-items: center; padding: 0.65rem 0.85rem; background: var(--bg-elevated); border: 1px solid var(--border-color); border-radius: 5px;">
               <div>
                 <div class="card-title" style="font-size: 0.9rem;">Блок 3: Backend-ядро</div>
-                <div class="card-desc" style="font-size: 0.8rem;">Каталог, поиск, боты, OTP</div>
+                <div class="card-desc" style="font-size: 0.8rem;">Каталог, поиск, TG-бот (заказы + офлайн-сток), OTP</div>
               </div>
               <div style="font-family: var(--font-mono); font-weight: 600;">1 560 000 ₽</div>
             </div>
             <div class="step-item" style="display: flex; justify-content: space-between; align-items: center; padding: 0.65rem 0.85rem; background: var(--bg-elevated); border: 1px solid var(--border-color); border-radius: 5px;">
               <div>
-                <div class="card-title" style="font-size: 0.9rem;">Блок 4: Кассовое ядро</div>
-                <div class="card-desc" style="font-size: 0.8rem;">Онлайн-оплата (54-ФЗ) и шлюз с ERP</div>
+                <div class="card-title" style="font-size: 0.9rem;">Блок 4: Корзина, чекаут и шлюз с ERP</div>
+                <div class="card-desc" style="font-size: 0.8rem;">Бронь, статусы C&amp;C, синхронизация с ERP TI</div>
               </div>
               <div style="font-family: var(--font-mono); font-weight: 600;">540 000 ₽</div>
             </div>
@@ -552,12 +553,13 @@ import '../styles/v7-light.css';
           <div class="fashion-card-light">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem;">
               <span class="badge-black">Фаза 2: Масштаб & LTV (~4 месяца)</span>
-              <span style="font-family: var(--font-mono); font-weight: 600; font-size: 0.9rem; color: var(--text-main);">~2,8–4,5 млн ₽</span>
+              <span style="font-family: var(--font-mono); font-weight: 600; font-size: 0.9rem; color: var(--text-main);">~3,4–5,4 млн ₽</span>
             </div>
             <div class="card-desc" style="margin-top: 0.75rem; font-size: 0.95rem; line-height: 1.5;">
               После подтверждения модели MVP мы внедряем автоматизацию для роста среднего чека и&nbsp;удержания клиентов:
             </div>
             <ul class="clean-list" style="margin-top: 0.5rem; flex-grow: 1;">
+              <li><strong>Онлайн-оплата (54-ФЗ):</strong> Эквайринг, холд/capture, облачная касса и&nbsp;сценарий частичного выкупа после примерки.</li>
               <li><strong>1С-Интеграция:</strong> Асинхронная выгрузка успешных продаж в&nbsp;1С TI для авто-взаиморасчетов.</li>
               <li><strong>Программа лояльности & Умные рекомендации:</strong> Интеграция Sailplay (программа лояльности) и&nbsp;Retail Rocket (товарные рекомендации) для мощных кросс-продаж.</li>
               <li><strong>Отзывы & UGC:</strong> Сбор пользовательского контента и&nbsp;оценок.</li>
